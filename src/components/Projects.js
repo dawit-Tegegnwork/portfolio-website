@@ -3,36 +3,68 @@ import React from 'react';
 const Projects = () => {
   const projectList = [
     {
-      title: 'LIS Analyzer Integration Demo',
-      url: 'https://github.com/dawit-Tegegnwork/lis-analyzer-integration-demo',
+      title: 'Healthcare AI Workflow Assistant',
+      url: 'https://github.com/dawit-Tegegnwork/medimind-hep-assist-ai',
       description:
-        'Public-safe Python demo for laboratory analyzer integration using synthetic lab data, validation, and LIS-ready payloads.',
-      note: 'Portfolio demo · synthetic data only',
-      tech: ['Python', 'Validation', 'LIS workflows'],
+        'FastAPI assistant with structured extraction, human review workflow, PostgreSQL audit logs, and synthetic clinical notes.',
+      note: 'Portfolio demo · synthetic data · human review required',
+      tech: ['Python', 'FastAPI', 'PostgreSQL', 'Docker'],
+    },
+    {
+      title: 'Enterprise Workflow Management System',
+      url: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system',
+      description:
+        'JWT auth, RBAC, approval transitions, audit trail, dashboard counts, and CSV export for generic enterprise requests.',
+      note: 'Portfolio demo · no employer-specific data',
+      tech: ['FastAPI', 'SQLModel', 'JWT', 'RBAC'],
+    },
+    {
+      title: 'Golang Transaction API',
+      url: 'https://github.com/dawit-Tegegnwork/golang-transaction-api',
+      description:
+        'Wallet-style backend with deposits, withdrawals, transfers, idempotency keys, and transaction-safe PostgreSQL operations.',
+      note: 'Portfolio demo · fintech-style patterns',
+      tech: ['Go', 'PostgreSQL', 'REST', 'Docker'],
+    },
+    {
+      title: 'Node Firebase Mobile Backend',
+      url: 'https://github.com/dawit-Tegegnwork/node-firebase-mobile-backend',
+      description:
+        'Transport operations demo using Firebase emulators, Cloud Functions, Firestore rules, and notification workflows.',
+      note: 'Emulator-only · no paid Firebase required',
+      tech: ['TypeScript', 'Firebase', 'Cloud Functions'],
+    },
+    {
+      title: 'CPIMS Information Management Demo',
+      url: 'https://github.com/dawit-Tegegnwork/cpims-information-management-demo',
+      description:
+        'Synthetic case records with completeness checks, duplicate detection, CSV import/export, and data quality reporting.',
+      note: 'Not official CPIMS · synthetic cases only',
+      tech: ['FastAPI', 'SQLite', 'Data quality'],
+    },
+    {
+      title: 'Application Support Runbook Lab',
+      url: 'https://github.com/dawit-Tegegnwork/application-support-runbook-lab',
+      description:
+        'Incident triage, UAT, release checklists, SQL data-quality checks, and optional issue tracker demo for support roles.',
+      note: 'Documentation-first · synthetic incidents',
+      tech: ['Runbooks', 'FastAPI', 'Support ops'],
     },
     {
       title: 'eCHIS → DHIS2 OpenHIM Mediator',
       url: 'https://github.com/dawit-Tegegnwork/echis-dhis2-mediator',
       description:
-        'OpenHIM integration prototype routing synthetic eCHIS-style community health reports through validation into DHIS2-compatible payloads.',
-      note: 'Portfolio demo · not a production HIE deployment',
+        'OpenHIM integration prototype routing synthetic eCHIS-style community health reports into DHIS2-compatible payloads.',
+      note: 'Digital health integration demo',
       tech: ['Node.js', 'OpenHIM', 'DHIS2', 'Docker'],
     },
     {
-      title: 'MediMind HEP Assist AI',
-      url: 'https://github.com/dawit-Tegegnwork/medimind-hep-assist-ai',
+      title: 'LIS Analyzer Integration Demo',
+      url: 'https://github.com/dawit-Tegegnwork/lis-analyzer-integration-demo',
       description:
-        'FastAPI backend for clinical text preprocessing, synthetic guideline retrieval, and SOAP note drafting.',
-      note: 'Portfolio demo · not production clinical AI',
-      tech: ['Python', 'FastAPI', 'pytest', 'Docker'],
-    },
-    {
-      title: 'Hospital Management System',
-      url: 'https://github.com/dawit-Tegegnwork/hospital-management-system',
-      description:
-        'Work-in-progress Ethiopian EMR scaffold with patient registration, pharmacy, lab, radiology, and billing module screens.',
-      note: 'Work in progress · auth and integrations incomplete',
-      tech: ['TypeScript', 'React', 'Vite', 'tRPC', 'MySQL'],
+        'Public-safe Python demo for laboratory analyzer integration using synthetic lab data and LIS-ready payloads.',
+      note: 'Portfolio demo · synthetic lab data',
+      tech: ['Python', 'Validation', 'LIS workflows'],
     },
   ];
 
