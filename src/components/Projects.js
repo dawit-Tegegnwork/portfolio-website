@@ -4,7 +4,7 @@ const Projects = () => {
   const projectList = [
     {
       title: 'Healthcare AI Workflow Assistant',
-      url: 'https://github.com/dawit-Tegegnwork/medimind-hep-assist-ai',
+      url: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant',
       description:
         'FastAPI assistant with structured extraction, human review workflow, PostgreSQL audit logs, and synthetic clinical notes.',
       note: 'Portfolio demo · synthetic data · human review required',
