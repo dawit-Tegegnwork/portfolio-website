@@ -2,6 +2,10 @@
 
 Personal portfolio site for Dawit Tegegnwork Wubale.
 
+[![Portfolio](https://img.shields.io/badge/site-live-0ea5e9?style=flat-square)](https://dawit-tegegnwork.github.io/portfolio-website/)
+
+**Live site:** https://dawit-tegegnwork.github.io/portfolio-website/
+
 ## Local development
 
 ```bash

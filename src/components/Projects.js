@@ -5,17 +5,19 @@ const Projects = () => {
     {
       title: 'Healthcare AI Workflow Assistant',
       url: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant',
+      deployUrl: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant/blob/main/docs/RENDER_DEPLOY.md',
       description:
         'FastAPI assistant with structured extraction, human review workflow, PostgreSQL audit logs, and synthetic clinical notes.',
-      note: 'Portfolio demo · synthetic data · human review required',
+      note: 'Portfolio demo · synthetic data · human review required · one-click Render deploy',
       tech: ['Python', 'FastAPI', 'PostgreSQL', 'Docker'],
     },
     {
       title: 'Enterprise Workflow Management System',
       url: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system',
+      deployUrl: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system/blob/master/docs/RENDER_DEPLOY.md',
       description:
         'JWT auth, RBAC, approval transitions, audit trail, dashboard counts, and CSV export for generic enterprise requests.',
-      note: 'Portfolio demo · no employer-specific data',
+      note: 'Portfolio demo · no employer-specific data · one-click Render deploy',
       tech: ['FastAPI', 'SQLModel', 'JWT', 'RBAC'],
     },
     {
@@ -86,6 +88,18 @@ const Projects = () => {
             </h3>
             <p className="text-gray-600 mb-4">{project.description}</p>
             <p className="text-gray-500 text-sm mb-4">{project.note}</p>
+            {project.deployUrl && (
+              <p className="text-sm mb-4">
+                <a
+                  href={project.deployUrl}
+                  className="text-green-700 hover:underline font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cloud deploy guide →
+                </a>
+              </p>
+            )}
             <div className="flex flex-wrap gap-2">
               {project.tech.map((tech, idx) => (
                 <span key={idx} className="bg-gray-200 px-3 py-1 rounded-full text-sm">
