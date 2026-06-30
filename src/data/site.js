@@ -10,7 +10,7 @@ export const profile = {
   credibility: [
     '6 polished portfolio systems',
     '53 passing tests',
-    '5 live Render demos',
+    '5 Render-ready API demos',
     'Docker-ready local runs',
     'Healthcare + backend + AI focus',
     'Synthetic data only',
@@ -355,7 +355,7 @@ export const skillZones = [
 
 export const proofItems = [
   { value: '53', label: 'automated tests passing', badge: 'tests', accent: '#0E9E8E' },
-  { value: '5', label: 'live demos on Render', badge: 'live', accent: '#1FA85B' },
+  { value: '5', label: 'Render blueprint demos', badge: 'live', accent: '#1FA85B' },
   { value: '6', label: 'GitHub portfolio repos', badge: 'repos', accent: '#0B2540' },
   { value: '6', label: 'CI workflows on every repo', badge: 'ci', accent: '#1FA85B' },
   { value: '100%', label: 'synthetic data — safe demos', badge: 'safe', accent: '#F2742C' },
