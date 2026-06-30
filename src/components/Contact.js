@@ -10,7 +10,7 @@ function Contact() {
         <div className="site-footer__content">
           <div>
             <span className="section-heading__kicker">Contact</span>
-            <h2>Let&apos;s talk about backend, healthcare AI, or digital health roles</h2>
+            <h2>Want someone who can build, debug, document, and keep systems useful?</h2>
             <p>
               Open to international opportunities in backend engineering, healthcare software, AI
               workflows, data integration, and application support.
@@ -20,7 +20,7 @@ function Contact() {
           <div className="site-footer__actions">
             <a className="button button--primary" href={`mailto:${profile.email}`}>
               <Mail size={18} aria-hidden="true" />
-              {profile.email}
+              Email Dawit
             </a>
             <a
               className="button button--secondary"
@@ -54,8 +54,7 @@ function Contact() {
       </Reveal>
 
       <p className="site-footer__fineprint">
-        © {new Date().getFullYear()} {profile.name}. Production-style portfolio projects · synthetic
-        data only.
+        © {new Date().getFullYear()} {profile.name}. Health-Tech Systems Lab · synthetic data only.
       </p>
     </footer>
   );

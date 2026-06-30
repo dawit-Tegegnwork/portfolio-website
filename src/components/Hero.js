@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowUpRight, Download, Github } from 'lucide-react';
+import { ArrowUpRight, Github, Mail } from 'lucide-react';
 import { availability, profile } from '../data/site';
 import Reveal from './Reveal';
-import StatusTerminal from './StatusTerminal';
+import SystemsMap from './SystemsMap';
 
 function highlightHeadline(text, keywords) {
-  const pattern = new RegExp(`(${keywords.join('|')})`, 'gi');
+  const pattern = new RegExp(`(${keywords.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
   const parts = text.split(pattern);
 
   return parts.map((part, index) =>
@@ -20,17 +20,14 @@ function highlightHeadline(text, keywords) {
 }
 
 function Hero() {
-  const cvUrl = `${process.env.PUBLIC_URL}/${profile.cvFilename}`;
-  const hasCv = false; // toggled at build time via env or static check — hide if 404
-
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <Reveal className="hero__copy">
         <span className="eyebrow">{profile.title}</span>
         <p className="hero__name">{profile.name}</p>
-        <p className="hero__tagline">{profile.tagline}</p>
 
         <div className="availability-chip" aria-label="Availability">
+          <span className="pulse-dot pulse-dot--live" aria-hidden="true" />
           <span>{availability.location}</span>
           <span className="availability-chip__sep">·</span>
           <span>{availability.timezone}</span>
@@ -45,7 +42,7 @@ function Hero() {
 
         <div className="hero__actions">
           <a className="button button--primary" href="#projects">
-            View Projects
+            Explore the Lab
             <ArrowUpRight size={18} aria-hidden="true" />
           </a>
           <a
@@ -55,14 +52,12 @@ function Hero() {
             rel="noreferrer"
           >
             <Github size={18} aria-hidden="true" />
-            GitHub
+            View GitHub
           </a>
-          {hasCv ? (
-            <a className="button button--ghost" href={cvUrl} target="_blank" rel="noreferrer">
-              <Download size={18} aria-hidden="true" />
-              Download CV
-            </a>
-          ) : null}
+          <a className="button button--ghost" href="#contact">
+            <Mail size={18} aria-hidden="true" />
+            Contact Me
+          </a>
         </div>
 
         <div className="credibility-strip" role="list" aria-label="Portfolio credibility">
@@ -75,7 +70,7 @@ function Hero() {
       </Reveal>
 
       <Reveal className="hero__panel" delay={100}>
-        <StatusTerminal />
+        <SystemsMap />
       </Reveal>
     </section>
   );

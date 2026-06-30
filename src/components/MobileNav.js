@@ -46,10 +46,10 @@ function MobileNav() {
           ))}
           <a
             className="button button--primary mobile-nav__cta"
-            href={`mailto:${profile.email}`}
+            href="#contact"
             onClick={() => setOpen(false)}
           >
-            Email me
+            Contact Me
           </a>
         </nav>
       ) : null}

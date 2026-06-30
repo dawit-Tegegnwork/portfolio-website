@@ -7,8 +7,11 @@ function Header() {
     <header className="site-header">
       <div className="site-header__inner">
         <a className="brand" href="#top">
-          <span className="brand__mark">DT</span>
-          <span className="brand__text">{profile.name}</span>
+          <span className="brand__mark">
+            <span className="pulse-dot pulse-dot--live" aria-hidden="true" />
+            DT
+          </span>
+          <span className="brand__text">{profile.title}</span>
         </a>
 
         <nav className="site-nav site-nav--desktop" aria-label="Primary">
@@ -19,8 +22,8 @@ function Header() {
           ))}
         </nav>
 
-        <a className="header-cta" href={`mailto:${profile.email}`}>
-          Email me
+        <a className="header-cta" href="#contact">
+          Contact Me
         </a>
 
         <MobileNav />

@@ -1,23 +1,22 @@
 import React, { useCallback, useState } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
-import ExperienceTimeline from './components/ExperienceTimeline';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import ProjectExplorer from './components/ProjectExplorer';
-import ProofBar from './components/ProofBar';
-import RoleLanes from './components/RoleLanes';
-import SkillsMatrix from './components/SkillsMatrix';
+import ProjectMissions from './components/ProjectMissions';
+import ProofWall from './components/ProofWall';
+import SkillZones from './components/SkillZones';
 import StickyCta from './components/StickyCta';
+import WhatIBuild from './components/WhatIBuild';
 
 function App() {
   const [highlightedProjectId, setHighlightedProjectId] = useState(null);
 
   const handleSkillClick = useCallback((projectId) => {
     setHighlightedProjectId(projectId);
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const mission = document.getElementById(`mission-${projectId}`);
+    if (mission) {
+      mission.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }, []);
 
@@ -28,14 +27,10 @@ function App() {
 
       <main className="page-content" id="top">
         <Hero />
-        <ExperienceTimeline />
-        <RoleLanes />
-        <ProjectExplorer
-          highlightedProjectId={highlightedProjectId}
-          onProjectHighlight={setHighlightedProjectId}
-        />
-        <SkillsMatrix onSkillClick={handleSkillClick} activeProjectId={highlightedProjectId} />
-        <ProofBar />
+        <WhatIBuild />
+        <ProjectMissions highlightedProjectId={highlightedProjectId} />
+        <SkillZones onSkillClick={handleSkillClick} activeProjectId={highlightedProjectId} />
+        <ProofWall />
         <About />
       </main>
 
