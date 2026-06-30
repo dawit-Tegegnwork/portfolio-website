@@ -10,10 +10,10 @@ export const profile = {
   credibility: [
     '6 polished portfolio systems',
     '53 passing tests',
-    'Docker-ready demos',
+    '5 live Render demos',
+    'Docker-ready local runs',
     'Healthcare + backend + AI focus',
     'Synthetic data only',
-    'Addis Ababa · UTC+3 · remote',
   ],
   about:
     'Based in Addis Ababa, building software at the intersection of healthcare, backend systems, and AI. I like practical systems: APIs that behave, dashboards that help teams decide, data workflows that reduce chaos, and tools that make operations smoother.',
@@ -42,12 +42,12 @@ export const navigation = [
 
 export const systemsMap = {
   nodes: [
-    { id: 'healthcare-ai', label: 'Healthcare AI', x: 50, y: 18, tech: ['FastAPI', 'Python'] },
-    { id: 'backend', label: 'Backend APIs', x: 82, y: 38, tech: ['Java', 'Node.js'] },
-    { id: 'data', label: 'Data Quality', x: 72, y: 72, tech: ['PostgreSQL', 'SQL'] },
-    { id: 'emr', label: 'EMR Workflows', x: 28, y: 72, tech: ['Docker', 'REST'] },
-    { id: 'support', label: 'Support Ops', x: 18, y: 38, tech: ['CI/CD', 'Linux'] },
-    { id: 'mobile', label: 'Mobile Backend', x: 50, y: 88, tech: ['Node.js', 'Firebase'] },
+    { id: 'healthcare-ai', label: 'Healthcare AI', missionId: 'healthcare-ai', x: 50, y: 18, tech: ['FastAPI', 'Python'] },
+    { id: 'backend', label: 'Backend APIs', missionId: 'enterprise-workflow', x: 82, y: 38, tech: ['Java', 'Node.js'] },
+    { id: 'data', label: 'Data Quality', missionId: 'cpims', x: 72, y: 72, tech: ['PostgreSQL', 'SQL'] },
+    { id: 'emr', label: 'EMR Workflows', missionId: 'healthcare-ai', x: 28, y: 72, tech: ['Docker', 'REST'] },
+    { id: 'support', label: 'Support Ops', missionId: 'runbook', x: 18, y: 38, tech: ['CI/CD', 'Linux'] },
+    { id: 'mobile', label: 'Mobile Backend', missionId: 'firebase', x: 50, y: 88, tech: ['Node.js', 'Firebase'] },
   ],
   edges: [
     ['healthcare-ai', 'backend'],
@@ -122,9 +122,15 @@ export const projects = [
     hasDocker: true,
     hasApi: true,
     github: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant',
-    liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
+    liveDemo: {
+      status: 'live',
+      label: 'Live demo',
+      url: 'https://healthcare-ai-workflow-assistant.onrender.com/dashboard',
+      docsUrl: 'https://healthcare-ai-workflow-assistant.onrender.com/docs',
+    },
     localTest: 'docker compose up --build && curl http://localhost:8000/health',
-    screenshot: `${screenshotBase}/healthcare-ai.svg`,
+    screenshot: `${screenshotBase}/healthcare-ai.png`,
+    screenshotAlt: 'Healthcare AI review dashboard with pending extractions queue',
     deployGuide:
       'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant/blob/main/docs/RENDER_DEPLOY.md',
   },
@@ -145,9 +151,15 @@ export const projects = [
     hasDocker: true,
     hasApi: true,
     github: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system',
-    liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
+    liveDemo: {
+      status: 'live',
+      label: 'Live demo',
+      url: 'https://enterprise-workflow-management-system.onrender.com/dashboard',
+      docsUrl: 'https://enterprise-workflow-management-system.onrender.com/docs',
+    },
     localTest: 'docker compose up --build && curl http://localhost:8001/health',
-    screenshot: `${screenshotBase}/enterprise-workflow.svg`,
+    screenshot: `${screenshotBase}/enterprise-workflow.png`,
+    screenshotAlt: 'Enterprise workflow dashboard with approval status cards',
     deployGuide:
       'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system/blob/master/docs/RENDER_DEPLOY.md',
   },
@@ -168,9 +180,17 @@ export const projects = [
     hasDocker: true,
     hasApi: true,
     github: 'https://github.com/dawit-Tegegnwork/golang-transaction-api',
-    liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
-    localTest: 'docker compose up --build && curl http://localhost:8080/health',
-    screenshot: `${screenshotBase}/golang-api.svg`,
+    liveDemo: {
+      status: 'live',
+      label: 'Live demo',
+      url: 'https://golang-transaction-api.onrender.com/',
+      docsUrl: 'https://golang-transaction-api.onrender.com/audit?limit=10',
+    },
+    localTest: 'docker compose up --build && curl http://localhost:8082/health',
+    screenshot: `${screenshotBase}/golang-api.png`,
+    screenshotAlt: 'Golang transaction API landing with wallet endpoints',
+    deployGuide:
+      'https://github.com/dawit-Tegegnwork/golang-transaction-api/blob/main/docs/RENDER_DEPLOY.md',
   },
   {
     id: 'firebase',
@@ -189,9 +209,15 @@ export const projects = [
     hasDocker: false,
     hasApi: true,
     github: 'https://github.com/dawit-Tegegnwork/node-firebase-mobile-backend',
-    liveDemo: { status: 'local', label: 'Local emulator demo' },
+    liveDemo: {
+      status: 'local',
+      label: 'Local emulator',
+      url: 'https://github.com/dawit-Tegegnwork/node-firebase-mobile-backend/blob/main/docs/DEMO.md',
+    },
     localTest: 'npm run demo',
-    screenshot: `${screenshotBase}/firebase-emulator.svg`,
+    screenshot: `${screenshotBase}/firebase-emulator.png`,
+    screenshotAlt: 'Firebase emulator suite for mobile backend demo',
+    demoGuide: 'https://github.com/dawit-Tegegnwork/node-firebase-mobile-backend/blob/main/docs/DEMO.md',
   },
   {
     id: 'cpims',
@@ -210,9 +236,17 @@ export const projects = [
     hasDocker: true,
     hasApi: true,
     github: 'https://github.com/dawit-Tegegnwork/cpims-information-management-demo',
-    liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
+    liveDemo: {
+      status: 'live',
+      label: 'Live demo',
+      url: 'https://cpims-information-management-demo.onrender.com/dashboard',
+      docsUrl: 'https://cpims-information-management-demo.onrender.com/docs',
+    },
     localTest: 'docker compose up --build && curl http://localhost:8000/health',
-    screenshot: `${screenshotBase}/cpims.svg`,
+    screenshot: `${screenshotBase}/cpims.png`,
+    screenshotAlt: 'CPIMS operations dashboard with case completeness bars',
+    deployGuide:
+      'https://github.com/dawit-Tegegnwork/cpims-information-management-demo/blob/main/docs/RENDER_DEPLOY.md',
   },
   {
     id: 'runbook',
@@ -231,9 +265,17 @@ export const projects = [
     hasDocker: true,
     hasApi: true,
     github: 'https://github.com/dawit-Tegegnwork/application-support-runbook-lab',
-    liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
+    liveDemo: {
+      status: 'live',
+      label: 'Live demo',
+      url: 'https://application-support-runbook-lab.onrender.com/board',
+      docsUrl: 'https://application-support-runbook-lab.onrender.com/docs',
+    },
     localTest: 'docker compose up --build && curl http://localhost:8010/health',
-    screenshot: `${screenshotBase}/runbook.svg`,
+    screenshot: `${screenshotBase}/runbook.png`,
+    screenshotAlt: 'Application support triage board with INC-240601',
+    deployGuide:
+      'https://github.com/dawit-Tegegnwork/application-support-runbook-lab/blob/main/docs/RENDER_DEPLOY.md',
   },
 ];
 
@@ -313,9 +355,9 @@ export const skillZones = [
 
 export const proofItems = [
   { value: '53', label: 'automated tests passing', badge: 'tests', accent: '#0E9E8E' },
+  { value: '5', label: 'live demos on Render', badge: 'live', accent: '#1FA85B' },
   { value: '6', label: 'GitHub portfolio repos', badge: 'repos', accent: '#0B2540' },
   { value: '6', label: 'CI workflows on every repo', badge: 'ci', accent: '#1FA85B' },
   { value: '100%', label: 'synthetic data — safe demos', badge: 'safe', accent: '#F2742C' },
   { value: 'Docker', label: 'compose stacks ready to run', badge: 'docker', accent: '#0E9E8E' },
-  { value: 'Live', label: 'portfolio on GitHub Pages', badge: 'live', accent: '#1FA85B' },
 ];

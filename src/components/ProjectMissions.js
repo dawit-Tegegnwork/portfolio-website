@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Terminal } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, Play, Terminal } from 'lucide-react';
 import { projects } from '../data/site';
 import CopyButton from './CopyButton';
 import Reveal from './Reveal';
@@ -12,6 +12,19 @@ function DemoStatus({ liveDemo }) {
         ? 'demo-pill demo-pill--live'
         : 'demo-pill demo-pill--soon';
 
+  if (liveDemo.url) {
+    return (
+      <a
+        className={`${className} demo-pill--link`}
+        href={liveDemo.url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {liveDemo.label}
+      </a>
+    );
+  }
+
   return <span className={className}>{liveDemo.label}</span>;
 }
 
@@ -23,8 +36,8 @@ function ProjectMissions({ highlightedProjectId }) {
           <span className="section-heading__kicker">Project Missions</span>
           <h2>Six systems you can inspect, test, and run</h2>
           <p>
-            Mission-style cards for production-style reference implementations. Copy a demo command,
-            open GitHub, or check live demo status — all synthetic data.
+            Try live demos on Render (free tier — first load may take ~30s), copy a local command,
+            or open GitHub. All synthetic data.
           </p>
         </div>
       </Reveal>
@@ -37,9 +50,18 @@ function ProjectMissions({ highlightedProjectId }) {
               className={`mission-card ${highlightedProjectId === project.id ? 'mission-card--highlight' : ''}`}
               style={{ '--mission-accent': project.accent }}
             >
-              <div className="mission-card__media">
-                <img src={project.screenshot} alt={`${project.title} preview`} loading="lazy" />
-              </div>
+              <a
+                className="mission-card__media mission-card__media--link"
+                href={project.liveDemo.url || project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={project.screenshot}
+                  alt={project.screenshotAlt || `${project.title} preview`}
+                  loading="lazy"
+                />
+              </a>
 
               <div className="mission-card__body">
                 <div className="mission-card__top">
@@ -60,6 +82,12 @@ function ProjectMissions({ highlightedProjectId }) {
                   <p>{project.solution}</p>
                 </div>
 
+                <div className="mission-card__proves">
+                  {project.proves.map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
+
                 <div className="mission-card__tags">
                   {project.stack.map((tech) => (
                     <span key={tech}>{tech}</span>
@@ -73,10 +101,35 @@ function ProjectMissions({ highlightedProjectId }) {
                   {project.hasApi ? <span className="status-badge">API</span> : null}
                 </div>
 
+                <div className="mission-card__actions">
+                  {project.liveDemo.url ? (
+                    <a
+                      className="button button--primary mission-card__cta"
+                      href={project.liveDemo.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Play size={16} aria-hidden="true" />
+                      Try live demo
+                    </a>
+                  ) : null}
+                  {project.liveDemo.docsUrl ? (
+                    <a
+                      className="button button--secondary mission-card__cta"
+                      href={project.liveDemo.docsUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <ExternalLink size={16} aria-hidden="true" />
+                      API docs
+                    </a>
+                  ) : null}
+                </div>
+
                 <div className="mission-card__command">
                   <Terminal size={16} aria-hidden="true" />
                   <code>{project.localTest}</code>
-                  <CopyButton text={project.localTest} />
+                  <CopyButton text={project.localTest} label="Copy local demo command" />
                 </div>
 
                 <div className="mission-card__links">
@@ -87,6 +140,12 @@ function ProjectMissions({ highlightedProjectId }) {
                   {project.deployGuide ? (
                     <a href={project.deployGuide} target="_blank" rel="noreferrer">
                       Deploy guide
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </a>
+                  ) : null}
+                  {project.demoGuide ? (
+                    <a href={project.demoGuide} target="_blank" rel="noreferrer">
+                      Local demo guide
                       <ArrowUpRight size={16} aria-hidden="true" />
                     </a>
                   ) : null}

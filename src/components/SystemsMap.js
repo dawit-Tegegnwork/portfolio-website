@@ -91,6 +91,18 @@ function SystemsMap() {
             </g>
           ))}
         </svg>
+        <div className="systems-map__links">
+          {nodes.map((node) => (
+            <a
+              key={node.id}
+              className="systems-map__link"
+              href={`#mission-${node.missionId}`}
+              style={{ left: `${node.x}%`, top: `${node.y}%` }}
+            >
+              <span className="sr-only">{node.label} project</span>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

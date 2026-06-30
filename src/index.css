@@ -465,6 +465,28 @@ svg { flex-shrink: 0; }
   display: block;
 }
 
+.systems-map__links {
+  position: absolute;
+  inset: 1.25rem;
+  pointer-events: none;
+}
+
+.systems-map__link {
+  position: absolute;
+  width: 56px;
+  height: 36px;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  pointer-events: auto;
+  transition: background 160ms ease, box-shadow 160ms ease;
+}
+
+.systems-map__link:hover,
+.systems-map__link:focus-visible {
+  background: rgba(14, 158, 142, 0.12);
+  box-shadow: 0 0 0 2px rgba(14, 158, 142, 0.35);
+}
+
 .systems-map__line {
   stroke: url(#lineGrad);
   stroke-width: 0.35;
@@ -807,6 +829,53 @@ svg { flex-shrink: 0; }
   border: 1px solid rgba(14, 158, 142, 0.35);
   background: var(--teal-soft);
   color: var(--teal);
+}
+
+.demo-pill--link {
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.demo-pill--link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 158, 142, 0.15);
+}
+
+.mission-card__media--link {
+  display: block;
+  transition: opacity 160ms ease;
+}
+
+.mission-card__media--link:hover {
+  opacity: 0.92;
+}
+
+.mission-card__proves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.mission-card__proves span {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px dashed var(--border-strong);
+  background: var(--surface-muted);
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.mission-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.mission-card__cta {
+  min-height: 42px;
+  padding: 0.65rem 1rem;
+  font-size: 0.68rem;
 }
 
 .mission-card__command {
