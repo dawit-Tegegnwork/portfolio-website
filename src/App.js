@@ -112,70 +112,95 @@ const experience = [
 
 const projects = [
   {
-    title: 'Hospital OS',
-    link: 'https://github.com/dawit-Tegegnwork/Hospital-management-system',
+    title: 'Healthcare AI Workflow Assistant',
+    link: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant',
     description:
-      'A portfolio-grade hospital operations demo built around Ethiopian workflows, modern full-stack architecture, and public-safe integration examples.',
+      'Synthetic healthcare AI workflow demo for structured extraction, human review, audit logs, and safe AI-assisted documentation.',
     details: [
-      'Covers patient registration, appointments, consultations, pharmacy, laboratory, radiology, billing, inpatient flows, and integration management.',
-      'Includes HL7 and ASTM parsing utilities for safe machine-result ingestion demos.',
-      'Uses Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, and Docker.',
+      'FastAPI service with note intake, mock LLM extraction, reviewer approval states, and audit-friendly records.',
+      'Includes OpenAPI documentation, Docker setup, tests, screenshots, and synthetic demo data only.',
+      'Shows practical healthcare AI design without claiming autonomous clinical decision-making.',
     ],
-    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'HL7', 'ASTM'],
+    tags: ['FastAPI', 'Healthcare AI', 'PostgreSQL', 'Audit Logs', 'Docker'],
   },
   {
-    title: 'LIS Analyzer Integration Demo',
-    link: 'https://github.com/dawit-Tegegnwork/lis-analyzer-integration-demo',
+    title: 'Enterprise Workflow Management System',
+    link: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system',
     description:
-      'A public-safe demo showing how analyzer outputs can be validated, normalized, and prepared for LIS-facing workflows using synthetic laboratory data.',
+      'Approval workflow platform demonstrating backend APIs, JWT authentication, role-based access, status transitions, and reporting.',
     details: [
-      'Handles CSV and JSON ingestion, machine-code mapping, duplicate detection, unit validation, and abnormal result flagging.',
-      'Produces normalized payloads together with validation logs, structured error output, and summary reports.',
-      'Designed to demonstrate integration thinking clearly without exposing real patient data.',
+      'Models staff, managers, auditors, requests, approvals, comments, and audit history.',
+      'Includes CSV export, API examples, Docker setup, and tests around workflow behavior.',
+      'Directly supports backend, full-stack, application support, and enterprise systems roles.',
     ],
-    tags: ['Python', 'Lab Integrations', 'Validation', 'Synthetic Data'],
+    tags: ['FastAPI', 'RBAC', 'JWT', 'Workflow', 'CSV Export'],
   },
   {
-    title: 'Healthcare Integration Portfolio',
-    link: 'https://github.com/dawit-Tegegnwork/healthcare-integration-portfolio',
+    title: 'Golang Transaction API',
+    link: 'https://github.com/dawit-Tegegnwork/golang-transaction-api',
     description:
-      'A repository for healthcare integration work samples, architecture writeups, diagrams, and public-safe demos.',
+      'Go backend API for wallet-style transactions, idempotency keys, audit logs, deposits, withdrawals, and transfers.',
     details: [
-      'Collects portfolio material around interoperability thinking and implementation patterns.',
-      'Designed to communicate systems work clearly to hiring teams and collaborators.',
+      'Demonstrates transaction-safe API design, PostgreSQL persistence, Docker, and repeat-safe request handling.',
+      'Includes endpoint documentation, schema notes, tests, and curl examples for recruiter review.',
+      'Useful proof for backend, fintech, payment, and Golang developer applications.',
     ],
-    tags: ['Architecture', 'Writeups', 'Diagrams', 'Healthcare IT'],
+    tags: ['Go', 'PostgreSQL', 'REST API', 'Idempotency', 'Transactions'],
   },
   {
-    title: 'EMR Module and Imaging Demos',
-    link: 'https://github.com/dawit-Tegegnwork/emr-module-demo',
-    secondaryLink: 'https://github.com/dawit-Tegegnwork/pacs-dicom-workflow-tool',
+    title: 'Node Firebase Mobile Backend',
+    link: 'https://github.com/dawit-Tegegnwork/node-firebase-mobile-backend',
     description:
-      'Focused demo repositories covering EMR module design, imaging workflows, and healthcare integration experiments.',
+      'Firebase emulator-based transport backend showing TypeScript Cloud Functions, Firestore rules, role-aware workflows, and notifications.',
     details: [
-      'The EMR module demo concentrates on workflow design and implementation samples.',
-      'The PACS and DICOM repository explores imaging-oriented tooling, viewers, and workflow integration ideas.',
+      'Covers dispatcher, driver, and admin flows with trip status updates and generated notification records.',
+      'Runs locally with Firebase emulators, avoiding paid services while showing realistic mobile backend structure.',
+      'Matches Node.js, TypeScript, Firebase, Cloud Functions, and mobile backend job requirements.',
     ],
-    tags: ['EMR', 'PACS', 'DICOM', 'Workflow Design'],
+    tags: ['Node.js', 'TypeScript', 'Firebase', 'Cloud Functions', 'Firestore'],
+  },
+  {
+    title: 'CPIMS Information Management Demo',
+    link: 'https://github.com/dawit-Tegegnwork/cpims-information-management-demo',
+    description:
+      'Synthetic case information management demo focused on data quality, duplicate detection, CSV import/export, and confidential records handling.',
+    details: [
+      'Implements case registration, completeness scoring, lifecycle states, duplicate-candidate review, and reporting commands.',
+      'Documents privacy rules clearly and uses synthetic records only.',
+      'Supports NGO, CPIMS, information management, data systems, and reporting applications.',
+    ],
+    tags: ['FastAPI', 'Information Management', 'Data Quality', 'CSV', 'NGO Systems'],
+  },
+  {
+    title: 'Application Support Runbook Lab',
+    link: 'https://github.com/dawit-Tegegnwork/application-support-runbook-lab',
+    description:
+      'Application support portfolio repo with runbooks, UAT plans, SQL checks, release checklists, and a synthetic issue tracker.',
+    details: [
+      'Shows how incidents are triaged, reproduced, documented, escalated, tested, and monitored after release.',
+      'Includes practical templates for vendor escalation, user training, data-quality checks, and post-deployment monitoring.',
+      'Useful for healthcare application support, implementation, and systems operations roles.',
+    ],
+    tags: ['Application Support', 'UAT', 'Runbooks', 'SQL Checks', 'FastAPI'],
   },
 ];
 
 const skillGroups = [
   {
     title: 'Programming',
-    items: ['Python', 'Java', 'C++', 'REST APIs', 'Git', 'Linux'],
+    items: ['Python', 'Java', 'Go', 'Node.js', 'TypeScript', 'REST APIs'],
   },
   {
-    title: 'AI and Machine Learning',
-    items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLP', 'Computer Vision'],
+    title: 'AI and Backend',
+    items: ['FastAPI', 'LLM workflows', 'RAG concepts', 'Prompting', 'PostgreSQL', 'Docker'],
   },
   {
-    title: 'Data and Platforms',
-    items: ['SQL', 'PostgreSQL', 'Bahmni', 'OpenEMR', 'OpenELIS'],
+    title: 'Digital Health',
+    items: ['OpenMRS', 'OpenELIS', 'Bahmni', 'DHIS2/eCHIS', 'FHIR/HL7 concepts'],
   },
   {
-    title: 'Domain Strength',
-    items: ['EMR workflows', 'Clinical data management', 'Healthcare information systems', 'Applied AI in healthcare'],
+    title: 'Systems Delivery',
+    items: ['RBAC', 'Audit logs', 'CI/CD concepts', 'Linux', 'Application support', 'User training'],
   },
 ];
 
@@ -382,8 +407,8 @@ function App() {
             <span className="section-heading__kicker">Selected work</span>
             <h2>Public-facing projects that reflect my healthcare engineering direction</h2>
             <p>
-              These repositories showcase the kinds of systems and integration problems I care about most: EMR design,
-              laboratory workflows, interoperability, and practical hospital software architecture.
+              These repositories are built as recruiter-readable proof of the roles I target most: backend APIs,
+              healthcare AI, digital health, information management, Firebase mobile backends, and application support.
             </p>
           </div>
 
@@ -438,7 +463,7 @@ function App() {
               <div>
                 <h3>BSc in Computer Science and Engineering</h3>
                 <p>Adama Science and Technology University, Adama, Ethiopia</p>
-                <span className="education-card__meta">Sep 2017 - Sep 2021 - GPA 3.12 / 4.00</span>
+                <span className="education-card__meta">Sep 2017 - Sep 2021</span>
               </div>
             </article>
 
@@ -524,4 +549,3 @@ function App() {
 }
 
 export default App;
-
