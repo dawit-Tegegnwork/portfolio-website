@@ -6,6 +6,50 @@ Live portfolio for backend, healthcare AI, digital health, information managemen
 
 **Live site:** https://dawit-tegegnwork.github.io/portfolio-website/
 
+This is a **deployment-ready portfolio website** showcasing production-style backend and healthcare AI projects — all demos use **synthetic data** and are reference implementations for recruiter evaluation.
+
+## Live Demo
+
+| Channel | URL |
+|---------|-----|
+| **GitHub Pages** | https://dawit-tegegnwork.github.io/portfolio-website/ |
+
+## Quick Test in 3 Minutes
+
+```bash
+npm install
+npm start
+```
+
+1. Open http://localhost:3000 — browse featured projects  
+2. Click project cards — each links to GitHub repo with live/local demo instructions  
+3. Run `npm run build:pages` to verify GitHub Pages build  
+
+## Production-Style Features
+
+- React portfolio with project “proves” bullets for recruiters  
+- GitHub Pages deployment from `docs/`  
+- Links to all pinned repos with screenshots and test paths  
+- Responsive layout and clear role positioning  
+
+## Health Check
+
+Static site — no API health endpoint. Verify deploy with:
+
+```bash
+npm run build:pages && test -f docs/index.html && echo "build ok"
+```
+
+## Synthetic Data Notice
+
+Project descriptions reference portfolio demos with synthetic data only. No claim of hospital, NGO, or employer production usage.
+
+## What Recruiters Can Evaluate
+
+- Clear presentation of backend, healthcare AI, and support skills  
+- Links to runnable portfolio repos with health checks and docs  
+- Professional GitHub Pages deployment  
+
 ## What this site highlights
 
 - Healthcare AI workflow engineering with human review and audit logs.
