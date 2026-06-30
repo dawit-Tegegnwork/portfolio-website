@@ -124,7 +124,7 @@ export const projects = [
     github: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant',
     liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
     localTest: 'docker compose up --build && curl http://localhost:8000/health',
-    screenshot: `${screenshotBase}/healthcare-ai.png`,
+    screenshot: `${screenshotBase}/healthcare-ai.svg`,
     deployGuide:
       'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant/blob/main/docs/RENDER_DEPLOY.md',
   },
@@ -147,7 +147,7 @@ export const projects = [
     github: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system',
     liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
     localTest: 'docker compose up --build && curl http://localhost:8001/health',
-    screenshot: `${screenshotBase}/enterprise-workflow.png`,
+    screenshot: `${screenshotBase}/enterprise-workflow.svg`,
     deployGuide:
       'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system/blob/master/docs/RENDER_DEPLOY.md',
   },
@@ -170,7 +170,7 @@ export const projects = [
     github: 'https://github.com/dawit-Tegegnwork/golang-transaction-api',
     liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
     localTest: 'docker compose up --build && curl http://localhost:8080/health',
-    screenshot: `${screenshotBase}/golang-api.png`,
+    screenshot: `${screenshotBase}/golang-api.svg`,
   },
   {
     id: 'firebase',
@@ -212,7 +212,7 @@ export const projects = [
     github: 'https://github.com/dawit-Tegegnwork/cpims-information-management-demo',
     liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
     localTest: 'docker compose up --build && curl http://localhost:8000/health',
-    screenshot: `${screenshotBase}/cpims.png`,
+    screenshot: `${screenshotBase}/cpims.svg`,
   },
   {
     id: 'runbook',
@@ -233,7 +233,7 @@ export const projects = [
     github: 'https://github.com/dawit-Tegegnwork/application-support-runbook-lab',
     liveDemo: { status: 'coming-soon', label: 'Live demo coming soon' },
     localTest: 'docker compose up --build && curl http://localhost:8010/health',
-    screenshot: `${screenshotBase}/runbook.png`,
+    screenshot: `${screenshotBase}/runbook.svg`,
   },
 ];
 

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Healthcare AI Workflow Assistant dashboard preview">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FBF7F0"/>
+      <stop offset="100%" stop-color="#F4ECDE"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  <rect x="24" y="24" width="752" height="452" rx="16" fill="#fff" stroke="#E8DFD0" stroke-width="1"/>
+  <rect x="24" y="24" width="752" height="44" rx="16" fill="#0B2540"/>
+  <rect x="24" y="52" width="752" height="16" fill="#0B2540"/>
+  <circle cx="48" cy="46" r="6" fill="#F2742C"/>
+  <circle cx="68" cy="46" r="6" fill="#F4ECDE" opacity="0.5"/>
+  <circle cx="88" cy="46" r="6" fill="#1FA85B"/>
+  <text x="110" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Healthcare AI Workflow Assistant</text>
+  <text x="110" y="78" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Synthetic demo · human review required</text>
+  <rect x="44" y="96" width="108" height="72" rx="10" fill="#fff" stroke="#E8DFD0"/>
+  <text x="56" y="118" fill="#5B6B73" font-family="monospace" font-size="10">Pending review</text>
+  <text x="56" y="152" fill="#0E2A3B" font-family="Georgia,serif" font-size="28" font-weight="600">3</text>
+  <rect x="162" y="96" width="108" height="72" rx="10" fill="#fff" stroke="#E8DFD0"/>
+  <text x="174" y="118" fill="#5B6B73" font-family="monospace" font-size="10">Approved</text>
+  <text x="174" y="152" fill="#1FA85B" font-family="Georgia,serif" font-size="28" font-weight="600">12</text>
+  <rect x="280" y="96" width="108" height="72" rx="10" fill="#fff" stroke="#E8DFD0"/>
+  <text x="292" y="118" fill="#5B6B73" font-family="monospace" font-size="10">Extractions</text>
+  <text x="292" y="152" fill="#0E9E8E" font-family="Georgia,serif" font-size="28" font-weight="600">48</text>
+  <rect x="398" y="96" width="108" height="72" rx="10" fill="#fff" stroke="#E8DFD0"/>
+  <text x="410" y="118" fill="#5B6B73" font-family="monospace" font-size="10">Audit events</text>
+  <text x="410" y="152" fill="#0B2540" font-family="Georgia,serif" font-size="28" font-weight="600">156</text>
+  <rect x="44" y="188" width="712" height="36" rx="8" fill="#F8F3EA"/>
+  <text x="56" y="210" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">NOTE</text>
+  <text x="140" y="210" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">EXTRACTION</text>
+  <text x="340" y="210" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">STATUS</text>
+  <text x="520" y="210" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">REVIEWER</text>
+  <rect x="44" y="232" width="712" height="44" rx="8" fill="#fff" stroke="#E8DFD0"/>
+  <text x="56" y="258" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="12">Discharge summary  Ward 4B</text>
+  <text x="140" y="258" fill="#5B6B73" font-family="monospace" font-size="11">dx, meds, follow-up</text>
+  <rect x="340" y="244" width="88" height="20" rx="10" fill="rgba(242,116,44,0.15)"/>
+  <text x="352" y="258" fill="#F2742C" font-family="monospace" font-size="9">PENDING</text>
+  <text x="520" y="258" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11"></text>
+  <rect x="44" y="284" width="712" height="44" rx="8" fill="#fff" stroke="#E8DFD0"/>
+  <text x="56" y="310" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="12">Lab results review</text>
+  <text x="140" y="310" fill="#5B6B73" font-family="monospace" font-size="11">CBC, metabolic panel</text>
+  <rect x="340" y="296" width="88" height="20" rx="10" fill="rgba(31,168,91,0.15)"/>
+  <text x="358" y="310" fill="#1FA85B" font-family="monospace" font-size="9">APPROVED</text>
+  <text x="520" y="310" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Dr. A.</text>
+  <rect x="44" y="336" width="712" height="44" rx="8" fill="#fff" stroke="#E8DFD0"/>
+  <text x="56" y="362" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="12">Referral letter draft</text>
+  <text x="140" y="362" fill="#5B6B73" font-family="monospace" font-size="11">specialist, reason</text>
+  <rect x="340" y="348" width="108" height="20" rx="10" fill="rgba(14,158,142,0.15)"/>
+  <text x="348" y="362" fill="#0E9E8E" font-family="monospace" font-size="9">IN REVIEW</text>
+  <text x="520" y="362" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Nurse B.</text>
+  <rect x="44" y="400" width="200" height="56" rx="10" fill="#0E9E8E"/>
+  <text x="60" y="434" fill="#fff" font-family="monospace" font-size="11">POST /notes/{id}/extract</text>
+  <rect x="260" y="400" width="160" height="56" rx="10" fill="#F8F3EA" stroke="#0E9E8E" stroke-width="1"/>
+  <text x="276" y="434" fill="#0E9E8E" font-family="monospace" font-size="11">Audit log · 12 tests</text>
+</svg>
