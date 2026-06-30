@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Dawit Tegegnwork Wubale portfolio">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060b10"/>
-      <stop offset="100%" stop-color="#0a1520"/>
+      <stop offset="0%" stop-color="#0c0b09"/>
+      <stop offset="100%" stop-color="#141210"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
-  <rect width="1200" height="630" fill="none" stroke="rgba(0,225,177,0.15)" stroke-width="2"/>
-  <text x="80" y="120" fill="#00e1b1" font-family="monospace" font-size="22" letter-spacing="6">PORTFOLIO</text>
-  <text x="80" y="220" fill="#edf6f1" font-family="Georgia, serif" font-size="56">Dawit Tegegnwork Wubale</text>
-  <text x="80" y="290" fill="#93a7a5" font-family="sans-serif" font-size="28">AI &amp; Backend Software Engineer</text>
-  <text x="80" y="360" fill="#687d7b" font-family="sans-serif" font-size="22">Healthcare AI · Digital Health · Backend APIs</text>
-  <text x="80" y="520" fill="#00e1b1" font-family="monospace" font-size="18">dawit-tegegnwork.github.io/portfolio-website</text>
+  <rect width="1200" height="630" fill="none" stroke="rgba(232,168,73,0.2)" stroke-width="2"/>
+  <text x="80" y="120" fill="#e8a849" font-family="monospace" font-size="22" letter-spacing="6">PORTFOLIO</text>
+  <text x="80" y="220" fill="#f5f0e8" font-family="Georgia, serif" font-size="56">Dawit Tegegnwork Wubale</text>
+  <text x="80" y="290" fill="#a39e96" font-family="sans-serif" font-size="28">AI &amp; Backend Software Engineer</text>
+  <text x="80" y="360" fill="#6b6560" font-family="sans-serif" font-size="22">Healthcare AI · Digital Health · Backend APIs</text>
+  <text x="80" y="520" fill="#e8a849" font-family="monospace" font-size="18">dawit-tegegnwork.github.io/portfolio-website</text>
 </svg>
