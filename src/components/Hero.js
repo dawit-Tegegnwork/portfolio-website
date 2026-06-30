@@ -1,17 +1,45 @@
 import React from 'react';
-import { ArrowUpRight, Github } from 'lucide-react';
-import { profile } from '../data/site';
+import { ArrowUpRight, Download, Github } from 'lucide-react';
+import { availability, profile } from '../data/site';
 import Reveal from './Reveal';
+import StatusTerminal from './StatusTerminal';
+
+function highlightHeadline(text, keywords) {
+  const pattern = new RegExp(`(${keywords.join('|')})`, 'gi');
+  const parts = text.split(pattern);
+
+  return parts.map((part, index) =>
+    keywords.some((kw) => kw.toLowerCase() === part.toLowerCase()) ? (
+      <span key={`${part}-${index}`} className="text-accent">
+        {part}
+      </span>
+    ) : (
+      part
+    )
+  );
+}
 
 function Hero() {
+  const cvUrl = `${process.env.PUBLIC_URL}/${profile.cvFilename}`;
+  const hasCv = false; // toggled at build time via env or static check — hide if 404
+
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <Reveal className="hero__copy">
         <span className="eyebrow">{profile.title}</span>
         <p className="hero__name">{profile.name}</p>
         <p className="hero__tagline">{profile.tagline}</p>
+
+        <div className="availability-chip" aria-label="Availability">
+          <span>{availability.location}</span>
+          <span className="availability-chip__sep">·</span>
+          <span>{availability.timezone}</span>
+          <span className="availability-chip__sep">·</span>
+          <span>{availability.remote}</span>
+        </div>
+
         <h1 id="hero-heading" className="hero__title">
-          {profile.headline}
+          {highlightHeadline(profile.headline, profile.headlineHighlights)}
         </h1>
         <p className="hero__summary">{profile.subheadline}</p>
 
@@ -29,6 +57,12 @@ function Hero() {
             <Github size={18} aria-hidden="true" />
             GitHub
           </a>
+          {hasCv ? (
+            <a className="button button--ghost" href={cvUrl} target="_blank" rel="noreferrer">
+              <Download size={18} aria-hidden="true" />
+              Download CV
+            </a>
+          ) : null}
         </div>
 
         <div className="credibility-strip" role="list" aria-label="Portfolio credibility">
@@ -41,29 +75,7 @@ function Hero() {
       </Reveal>
 
       <Reveal className="hero__panel" delay={100}>
-        <div className="hero-card hero-card--accent">
-          <span className="hero-card__label">Portfolio positioning</span>
-          <h2>Reference implementations recruiters can run locally</h2>
-          <p>
-            Six production-style portfolio projects with synthetic data, health checks, OpenAPI docs,
-            and documented 3-minute test paths — not claims of live hospital or NGO deployments.
-          </p>
-        </div>
-
-        <div className="hero-card-grid">
-          <div className="hero-card">
-            <strong>Backend APIs</strong>
-            <span>FastAPI, Go, JWT, RBAC, idempotency, audit logs</span>
-          </div>
-          <div className="hero-card">
-            <strong>Healthcare & data</strong>
-            <span>AI workflows, case management, data quality, interoperability concepts</span>
-          </div>
-          <div className="hero-card">
-            <strong>Ops-ready demos</strong>
-            <span>Docker Compose, CI workflows, runbooks, triage boards</span>
-          </div>
-        </div>
+        <StatusTerminal />
       </Reveal>
     </section>
   );
