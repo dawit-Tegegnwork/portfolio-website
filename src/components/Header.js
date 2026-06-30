@@ -1,21 +1,25 @@
 import React from 'react';
-import { Mail, ExternalLink } from 'lucide-react';
+import { navigation, profile } from '../data/site';
 
-const Header = () => {
+function Header() {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 text-center">
-      <h1 className="text-5xl font-bold mb-4">Dawit Tegegnwork Wubale</h1>
-      <p className="text-2xl mb-4">Healthcare Systems Architecture | Data Science | AI Solutions</p>
-      <div className="flex justify-center gap-4">
-        <a href="mailto:your-email@example.com" className="bg-white text-blue-600 px-6 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors flex items-center gap-2">
-          <Mail size={20} /> Contact Me
+    <header className="site-header">
+      <div className="site-header__inner">
+        <a className="brand" href="#top">
+          <span className="brand__mark">DT</span>
+          <span className="brand__text">{profile.name}</span>
         </a>
-        <a href="your-resume-link" className="border border-white px-6 py-2 rounded-lg font-medium hover:bg-white/10 transition-colors flex items-center gap-2">
-          <ExternalLink size={20} /> View Resume
-        </a>
+
+        <nav className="site-nav" aria-label="Primary">
+          {navigation.map((item) => (
+            <a key={item.href} href={item.href} className="site-nav__link">
+              {item.label}
+            </a>
+          ))}
+        </nav>
       </div>
     </header>
   );
-};
+}
 
 export default Header;
