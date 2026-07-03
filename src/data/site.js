@@ -110,7 +110,7 @@ export const modernizationLabs = [
     github: 'https://github.com/dawit-Tegegnwork/hep-assist-ai-rag-platform',
     localTest: 'docker compose up --build',
     docsUrl: 'https://github.com/dawit-Tegegnwork/hep-assist-ai-rag-platform#quick-start-3-minutes',
-    tests: 38,
+    tests: 65,
     screenshot: `${process.env.PUBLIC_URL || ''}/screenshots/hep-assist.svg`,
   },
   {
@@ -204,10 +204,10 @@ export const caseStudies = [
       'Health programs need AI-assisted Q&A over approved content, with safety controls and human review before any answer is trusted.',
     modernization:
       'Vector RAG with citation display, emergency/diagnosis refusal gates, reviewer dashboard, golden-question evaluation, and audit log for every interaction.',
-    stack: ['Python', 'FastAPI', 'React', 'ChromaDB', 'Docker', 'GitHub Actions'],
+    stack: ['Python', 'FastAPI', 'React', 'Vector retrieval', 'Docker', 'GitHub Actions'],
     howToTest: 'docker compose up --build && ./scripts/demo_workflow.sh http://127.0.0.1:8000',
     github: 'https://github.com/dawit-Tegegnwork/hep-assist-ai-rag-platform',
-    tests: 38,
+    tests: 65,
     screenshot: `${screenshotBase}/hep-assist.svg`,
   },
   {
