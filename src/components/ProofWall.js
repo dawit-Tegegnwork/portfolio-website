@@ -7,11 +7,11 @@ function ProofWall() {
     <section className="section section--sand" id="proof">
       <Reveal>
         <div className="section-heading">
-          <span className="section-heading__kicker">Proof wall</span>
-          <h2>Evidence you can verify on GitHub</h2>
+          <span className="section-heading__kicker">Proof</span>
+          <h2>Evidence you can verify before the interview</h2>
           <p>
-            Automated tests, CI workflows, Docker setups, screenshots, and synthetic-data safety —
-            built so recruiters can evaluate quality without scheduling a call first.
+            Tests passing, Docker stacks, CI pipelines, synthetic-data safety, and docs/runbooks —
+            built so recruiters can evaluate engineering quality on their own schedule.
           </p>
         </div>
       </Reveal>

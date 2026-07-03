@@ -1,25 +1,16 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import About from './components/About';
+import CaseStudyCards from './components/CaseStudyCards';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import ProjectMissions from './components/ProjectMissions';
+import ModernizationLabs from './components/ModernizationLabs';
 import ProofWall from './components/ProofWall';
-import SkillZones from './components/SkillZones';
+import RolePathways from './components/RolePathways';
 import StickyCta from './components/StickyCta';
-import WhatIBuild from './components/WhatIBuild';
+import WhatIImprove from './components/WhatIImprove';
 
 function App() {
-  const [highlightedProjectId, setHighlightedProjectId] = useState(null);
-
-  const handleSkillClick = useCallback((projectId) => {
-    setHighlightedProjectId(projectId);
-    const mission = document.getElementById(`mission-${projectId}`);
-    if (mission) {
-      mission.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }, []);
-
   return (
     <div className="page-shell">
       <div className="page-backdrop" aria-hidden="true" />
@@ -27,10 +18,11 @@ function App() {
 
       <main className="page-content" id="top">
         <Hero />
-        <WhatIBuild />
-        <ProjectMissions highlightedProjectId={highlightedProjectId} />
-        <SkillZones onSkillClick={handleSkillClick} activeProjectId={highlightedProjectId} />
+        <RolePathways />
+        <ModernizationLabs />
+        <WhatIImprove />
         <ProofWall />
+        <CaseStudyCards />
         <About />
       </main>
 

@@ -10,16 +10,16 @@
   <rect x="24" y="24" width="752" height="44" rx="16" fill="#1FA85B"/>
   <rect x="24" y="52" width="752" height="16" fill="#1FA85B"/>
   <text x="44" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Application Support Runbook Lab</text>
-  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Incident triage · UAT runbooks · SQL health checks</text>
+  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Incident triage ï¿½ UAT runbooks ï¿½ SQL health checks</text>
   <rect x="44" y="104" width="220" height="320" rx="12" fill="rgba(242,116,44,0.08)" stroke="#F2742C"/>
-  <text x="60" y="128" fill="#F2742C" font-family="monospace" font-size="10" font-weight="600">P1 · OPEN</text>
+  <text x="60" y="128" fill="#F2742C" font-family="monospace" font-size="10" font-weight="600">P1 ï¿½ OPEN</text>
   <rect x="56" y="140" width="196" height="72" rx="8" fill="#fff" stroke="#F2742C" stroke-opacity="0.4"/>
   <text x="68" y="164" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="11" font-weight="600">Login failures spike</text>
-  <text x="68" y="184" fill="#F2742C" font-family="monospace" font-size="9">Assigned · 22 min</text>
+  <text x="68" y="184" fill="#F2742C" font-family="monospace" font-size="9">Assigned ï¿½ 22 min</text>
   <text x="68" y="200" fill="#5B6B73" font-family="monospace" font-size="8">Runbook: auth-service.md</text>
   <rect x="56" y="224" width="196" height="72" rx="8" fill="#fff" stroke="#E8DFD0"/>
   <text x="68" y="248" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="11" font-weight="600">Report timeout</text>
-  <text x="68" y="268" fill="#5B6B73" font-family="monospace" font-size="9">P2 · investigating</text>
+  <text x="68" y="268" fill="#5B6B73" font-family="monospace" font-size="9">P2 ï¿½ investigating</text>
   <rect x="280" y="104" width="220" height="320" rx="12" fill="rgba(14,158,142,0.08)" stroke="#0E9E8E"/>
   <text x="296" y="128" fill="#0E9E8E" font-family="monospace" font-size="10" font-weight="600">IN PROGRESS</text>
   <rect x="292" y="140" width="196" height="72" rx="8" fill="#fff" stroke="#0E9E8E" stroke-opacity="0.4"/>
@@ -31,11 +31,11 @@
   <rect x="528" y="140" width="216" height="100" rx="8" fill="#0B2540"/>
   <text x="540" y="164" fill="#1FA85B" font-family="monospace" font-size="9">SELECT COUNT(*) FROM tickets</text>
   <text x="540" y="184" fill="#fff" font-family="monospace" font-size="9">WHERE status = 'open';</text>
-  <text x="540" y="208" fill="#0E9E8E" font-family="monospace" font-size="9">’ 2 rows (expected)</text>
+  <text x="540" y="208" fill="#0E9E8E" font-family="monospace" font-size="9">ï¿½ 2 rows (expected)</text>
   <text x="540" y="228" fill="#1FA85B" font-family="monospace" font-size="9">orphan_records: 0 </text>
   <rect x="528" y="256" width="216" height="64" rx="8" fill="#fff" stroke="#E8DFD0"/>
   <text x="540" y="280" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="10" font-weight="600">Ticket API</text>
-  <text x="540" y="300" fill="#5B6B73" font-family="monospace" font-size="9">GET /api/tickets · PATCH status</text>
+  <text x="540" y="300" fill="#5B6B73" font-family="monospace" font-size="9">GET /api/tickets ï¿½ PATCH status</text>
   <rect x="44" y="440" width="88" height="24" rx="12" fill="#1FA85B"/>
   <text x="56" y="456" fill="#fff" font-family="monospace" font-size="9">7 tests</text>
   <rect x="140" y="440" width="88" height="24" rx="12" fill="#F8F3EA" stroke="#0B2540"/>

@@ -9,7 +9,7 @@ function About() {
         <div className="about-panel field-note">
           <span className="field-note__pin" aria-hidden="true" />
           <span className="section-heading__kicker">About Dawit</span>
-          <h2>Engineering where healthcare meets real operations</h2>
+          <h2>Digital health systems modernization engineer</h2>
           <p className="about-panel__lead">{profile.about}</p>
           <div className="about-panel__international">
             <span>{availability.location}</span>
@@ -20,8 +20,9 @@ function About() {
             ))}
           </div>
           <p className="about-panel__note">
-            Portfolio projects use <strong>synthetic data only</strong> and are reference
-            implementations — not deployed production systems used by hospitals, NGOs, or clients.
+            All portfolio work is <strong>production-style modernization labs</strong> with synthetic
+            data — reference implementations for evaluation, not deployed hospital, NGO, or government
+            systems.
           </p>
         </div>
       </Reveal>

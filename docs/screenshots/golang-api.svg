@@ -10,7 +10,7 @@
   <rect x="24" y="24" width="752" height="44" rx="16" fill="#0B2540"/>
   <rect x="24" y="52" width="752" height="16" fill="#0B2540"/>
   <text x="44" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Golang Transaction API</text>
-  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Idempotent wallet transfers · append-only audit log</text>
+  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Idempotent wallet transfers ï¿½ append-only audit log</text>
   <rect x="44" y="104" width="340" height="200" rx="12" fill="#F8F3EA" stroke="#E8DFD0"/>
   <text x="60" y="128" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">REST ENDPOINTS</text>
   <text x="60" y="156" fill="#1FA85B" font-family="monospace" font-size="11">GET</text>
@@ -27,11 +27,11 @@
   <rect x="404" y="104" width="352" height="200" rx="12" fill="#fff" stroke="#E8DFD0"/>
   <text x="420" y="128" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">LIVE TRANSFERS</text>
   <rect x="420" y="140" width="320" height="32" rx="6" fill="#F8F3EA"/>
-  <text x="432" y="160" fill="#0E2A3B" font-family="monospace" font-size="10">TX-8841 · wallet A ’ B · 2,500 ETB · OK</text>
+  <text x="432" y="160" fill="#0E2A3B" font-family="monospace" font-size="10">TX-8841 ï¿½ wallet A ï¿½ B ï¿½ 2,500 ETB ï¿½ OK</text>
   <rect x="420" y="180" width="320" height="32" rx="6" fill="#F8F3EA"/>
-  <text x="432" y="200" fill="#0E2A3B" font-family="monospace" font-size="10">TX-8842 · retry blocked · idempotent</text>
+  <text x="432" y="200" fill="#0E2A3B" font-family="monospace" font-size="10">TX-8842 ï¿½ retry blocked ï¿½ idempotent</text>
   <rect x="420" y="220" width="320" height="32" rx="6" fill="rgba(31,168,91,0.1)"/>
-  <text x="432" y="240" fill="#1FA85B" font-family="monospace" font-size="10">TX-8843 · deposit · 10,000 ETB · OK</text>
+  <text x="432" y="240" fill="#1FA85B" font-family="monospace" font-size="10">TX-8843 ï¿½ deposit ï¿½ 10,000 ETB ï¿½ OK</text>
   <rect x="44" y="324" width="712" height="120" rx="12" fill="#fff" stroke="#0E9E8E" stroke-width="1"/>
   <text x="60" y="348" fill="#0E9E8E" font-family="monospace" font-size="10" font-weight="600">AUDIT LOG</text>
   <text x="60" y="372" fill="#5B6B73" font-family="monospace" font-size="10">2026-06-30T09:12Z transfer created ref=payroll amount=2500</text>
@@ -40,5 +40,5 @@
   <rect x="44" y="456" width="100" height="24" rx="12" fill="#0E9E8E"/>
   <text x="56" y="472" fill="#fff" font-family="monospace" font-size="9">10 tests</text>
   <rect x="152" y="456" width="80" height="24" rx="12" fill="#F8F3EA" stroke="#0B2540"/>
-  <text x="164" y="472" fill="#0B2540" font-family="monospace" font-size="9">Go · PG</text>
+  <text x="164" y="472" fill="#0B2540" font-family="monospace" font-size="9">Go ï¿½ PG</text>
 </svg>

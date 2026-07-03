@@ -10,7 +10,7 @@
   <rect x="24" y="24" width="752" height="44" rx="16" fill="#0E9E8E"/>
   <rect x="24" y="52" width="752" height="16" fill="#0E9E8E"/>
   <text x="44" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">CPIMS Information Management</text>
-  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Synthetic case records · completeness · duplicate review</text>
+  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Synthetic case records ï¿½ completeness ï¿½ duplicate review</text>
   <rect x="44" y="104" width="160" height="72" rx="10" fill="#fff" stroke="#E8DFD0"/>
   <text x="56" y="126" fill="#5B6B73" font-family="monospace" font-size="10">Total cases</text>
   <text x="56" y="158" fill="#0E2A3B" font-family="Georgia,serif" font-size="26" font-weight="600">248</text>
@@ -53,5 +53,5 @@
   <rect x="44" y="404" width="180" height="48" rx="10" fill="#0E9E8E"/>
   <text x="60" y="434" fill="#fff" font-family="monospace" font-size="10">CSV import / export</text>
   <rect x="236" y="404" width="160" height="48" rx="10" fill="#F8F3EA" stroke="#0E9E8E"/>
-  <text x="252" y="434" fill="#0E9E8E" font-family="monospace" font-size="10">12 tests · FastAPI</text>
+  <text x="252" y="434" fill="#0E9E8E" font-family="monospace" font-size="10">12 tests ï¿½ FastAPI</text>
 </svg>

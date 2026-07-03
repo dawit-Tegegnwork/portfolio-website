@@ -13,7 +13,7 @@
   <circle cx="68" cy="46" r="6" fill="#F4ECDE" opacity="0.5"/>
   <circle cx="88" cy="46" r="6" fill="#1FA85B"/>
   <text x="110" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Healthcare AI Workflow Assistant</text>
-  <text x="110" y="78" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Synthetic demo · human review required</text>
+  <text x="110" y="78" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Synthetic demo ï¿½ human review required</text>
   <rect x="44" y="96" width="108" height="72" rx="10" fill="#fff" stroke="#E8DFD0"/>
   <text x="56" y="118" fill="#5B6B73" font-family="monospace" font-size="10">Pending review</text>
   <text x="56" y="152" fill="#0E2A3B" font-family="Georgia,serif" font-size="28" font-weight="600">3</text>
@@ -52,5 +52,5 @@
   <rect x="44" y="400" width="200" height="56" rx="10" fill="#0E9E8E"/>
   <text x="60" y="434" fill="#fff" font-family="monospace" font-size="11">POST /notes/{id}/extract</text>
   <rect x="260" y="400" width="160" height="56" rx="10" fill="#F8F3EA" stroke="#0E9E8E" stroke-width="1"/>
-  <text x="276" y="434" fill="#0E9E8E" font-family="monospace" font-size="11">Audit log · 12 tests</text>
+  <text x="276" y="434" fill="#0E9E8E" font-family="monospace" font-size="11">Audit log ï¿½ 12 tests</text>
 </svg>

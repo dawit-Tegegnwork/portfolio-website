@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="HEP Assist AI RAG Platform preview">
+  <defs>
+    <linearGradient id="bg-hep" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F0F7FA"/>
+      <stop offset="100%" stop-color="#E8F2F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-hep)"/>
+  <rect x="24" y="24" width="752" height="452" rx="16" fill="#fff" stroke="#D0E4EE" stroke-width="1"/>
+  <rect x="24" y="24" width="752" height="44" rx="16" fill="#0A2540"/>
+  <rect x="24" y="52" width="752" height="16" fill="#0A2540"/>
+  <circle cx="48" cy="46" r="6" fill="#0E9E8E"/>
+  <circle cx="68" cy="46" r="6" fill="#1A6BB5" opacity="0.6"/>
+  <circle cx="88" cy="46" r="6" fill="#1FA85B"/>
+  <text x="110" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">HEP Assist AI RAG Platform</text>
+  <text x="110" y="78" fill="#4A6274" font-family="system-ui,sans-serif" font-size="11">Synthetic guidelines - human review required</text>
+  <rect x="44" y="96" width="120" height="72" rx="10" fill="#fff" stroke="#D0E4EE"/>
+  <text x="56" y="118" fill="#4A6274" font-family="monospace" font-size="10">Questions</text>
+  <text x="56" y="152" fill="#0A2540" font-family="Georgia,serif" font-size="28" font-weight="600">24</text>
+  <rect x="176" y="96" width="120" height="72" rx="10" fill="#fff" stroke="#D0E4EE"/>
+  <text x="188" y="118" fill="#4A6274" font-family="monospace" font-size="10">Citations</text>
+  <text x="188" y="152" fill="#0E9E8E" font-family="Georgia,serif" font-size="28" font-weight="600">89%</text>
+  <rect x="308" y="96" width="120" height="72" rx="10" fill="#fff" stroke="#D0E4EE"/>
+  <text x="320" y="118" fill="#4A6274" font-family="monospace" font-size="10">Refusals</text>
+  <text x="320" y="152" fill="#F2742C" font-family="Georgia,serif" font-size="28" font-weight="600">3</text>
+  <rect x="440" y="96" width="120" height="72" rx="10" fill="#fff" stroke="#D0E4EE"/>
+  <text x="452" y="118" fill="#4A6274" font-family="monospace" font-size="10">Golden tests</text>
+  <text x="452" y="152" fill="#1FA85B" font-family="Georgia,serif" font-size="28" font-weight="600">12/12</text>
+  <rect x="44" y="188" width="712" height="120" rx="10" fill="#F5FAFC" stroke="#D0E4EE"/>
+  <text x="60" y="214" fill="#0A2540" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Q: What are danger signs in a newborn?</text>
+  <text x="60" y="240" fill="#4A6274" font-family="system-ui,sans-serif" font-size="11">A: Based on approved guideline chunk #4...</text>
+  <rect x="60" y="256" width="140" height="22" rx="6" fill="rgba(14,158,142,0.15)"/>
+  <text x="72" y="271" fill="#0E9E8E" font-family="monospace" font-size="9">citation: neonatal-care.md</text>
+  <rect x="44" y="324" width="340" height="56" rx="10" fill="#0E9E8E"/>
+  <text x="60" y="358" fill="#fff" font-family="monospace" font-size="11">POST /api/v1/questions/{id}/answer</text>
+  <rect x="400" y="324" width="180" height="56" rx="10" fill="#F5FAFC" stroke="#0E9E8E" stroke-width="1"/>
+  <text x="416" y="358" fill="#0E9E8E" font-family="monospace" font-size="11">Safety gates + audit log</text>
+  <rect x="44" y="396" width="200" height="56" rx="10" fill="#1A6BB5"/>
+  <text x="60" y="430" fill="#fff" font-family="monospace" font-size="11">Vector RAG retrieval</text>
+</svg>

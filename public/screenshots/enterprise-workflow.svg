@@ -11,16 +11,16 @@
   <rect x="24" y="52" width="752" height="16" fill="#1FA85B"/>
   <text x="44" y="50" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Enterprise Workflow Management</text>
   <rect x="580" y="34" width="72" height="24" rx="12" fill="rgba(255,255,255,0.2)"/>
-  <text x="592" y="50" fill="#fff" font-family="monospace" font-size="9">JWT · RBAC</text>
-  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Approval lanes · audit trail · CSV export</text>
+  <text x="592" y="50" fill="#fff" font-family="monospace" font-size="9">JWT ï¿½ RBAC</text>
+  <text x="44" y="84" fill="#5B6B73" font-family="system-ui,sans-serif" font-size="11">Approval lanes ï¿½ audit trail ï¿½ CSV export</text>
   <rect x="44" y="104" width="220" height="320" rx="12" fill="#F8F3EA" stroke="#E8DFD0"/>
   <text x="60" y="130" fill="#0B2540" font-family="monospace" font-size="10" font-weight="600">SUBMITTED</text>
   <rect x="56" y="144" width="196" height="64" rx="8" fill="#fff" stroke="#E8DFD0"/>
   <text x="68" y="168" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="11" font-weight="600">Leave request #1042</text>
-  <text x="68" y="188" fill="#5B6B73" font-family="monospace" font-size="9">Analyst · 3 days</text>
+  <text x="68" y="188" fill="#5B6B73" font-family="monospace" font-size="9">Analyst ï¿½ 3 days</text>
   <rect x="56" y="220" width="196" height="64" rx="8" fill="#fff" stroke="#E8DFD0"/>
   <text x="68" y="244" fill="#0E2A3B" font-family="system-ui,sans-serif" font-size="11" font-weight="600">Procurement #88</text>
-  <text x="68" y="264" fill="#5B6B73" font-family="monospace" font-size="9">Manager · $4,200</text>
+  <text x="68" y="264" fill="#5B6B73" font-family="monospace" font-size="9">Manager ï¿½ $4,200</text>
   <rect x="280" y="104" width="220" height="320" rx="12" fill="rgba(242,116,44,0.08)" stroke="#F2742C" stroke-width="1"/>
   <text x="296" y="130" fill="#F2742C" font-family="monospace" font-size="10" font-weight="600">MANAGER REVIEW</text>
   <rect x="292" y="144" width="196" height="64" rx="8" fill="#fff" stroke="#F2742C" stroke-opacity="0.3"/>
@@ -38,5 +38,5 @@
   <circle cx="272" cy="200" r="4" fill="#0E9E8E"/>
   <circle cx="508" cy="200" r="4" fill="#0E9E8E"/>
   <rect x="44" y="440" width="120" height="24" rx="12" fill="#0B2540"/>
-  <text x="56" y="456" fill="#fff" font-family="monospace" font-size="9">9 tests · Docker</text>
+  <text x="56" y="456" fill="#fff" font-family="monospace" font-size="9">9 tests ï¿½ Docker</text>
 </svg>

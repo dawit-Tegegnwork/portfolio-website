@@ -1,11 +1,13 @@
 import React from 'react';
-import { ArrowUpRight, Github, Mail } from 'lucide-react';
-import { availability, profile } from '../data/site';
+import { ArrowUpRight, Github, Stethoscope, Building2 } from 'lucide-react';
+import { availability, profile, rolePathways } from '../data/site';
 import Reveal from './Reveal';
-import SystemsMap from './SystemsMap';
 
 function highlightHeadline(text, keywords) {
-  const pattern = new RegExp(`(${keywords.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+  const pattern = new RegExp(
+    `(${keywords.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`,
+    'gi'
+  );
   const parts = text.split(pattern);
 
   return parts.map((part, index) =>
@@ -41,22 +43,22 @@ function Hero() {
         <p className="hero__summary">{profile.subheadline}</p>
 
         <div className="hero__actions">
-          <a className="button button--primary" href="#projects">
-            Explore the Lab
-            <ArrowUpRight size={18} aria-hidden="true" />
+          <a className="button button--primary" href="#lab-hep-assist">
+            <Stethoscope size={18} aria-hidden="true" />
+            View Healthcare AI
+          </a>
+          <a className="button button--secondary" href="#lab-eris">
+            <Building2 size={18} aria-hidden="true" />
+            View eRIS Modernization
           </a>
           <a
-            className="button button--secondary"
+            className="button button--ghost"
             href={profile.github}
             target="_blank"
             rel="noreferrer"
           >
             <Github size={18} aria-hidden="true" />
-            View GitHub
-          </a>
-          <a className="button button--ghost" href="#contact">
-            <Mail size={18} aria-hidden="true" />
-            Contact Me
+            GitHub
           </a>
         </div>
 
@@ -70,7 +72,34 @@ function Hero() {
       </Reveal>
 
       <Reveal className="hero__panel" delay={100}>
-        <SystemsMap />
+        <div className="role-preview">
+          <span className="role-preview__badge">
+            <span className="pulse-dot pulse-dot--live" aria-hidden="true" />
+            Recruiter pathways
+          </span>
+          <p className="role-preview__lead">
+            Pick the role lane that matches your opening — each links to a modernization lab you can
+            run locally.
+          </p>
+          <ul className="role-preview__list">
+            {rolePathways.map((role) => (
+              <li key={role.id}>
+                <a
+                  href={`#role-${role.id}`}
+                  className="role-preview__item"
+                  style={{ '--role-accent': role.accent }}
+                >
+                  <span className="role-preview__dot" aria-hidden="true" />
+                  <span>
+                    <strong>{role.title}</strong>
+                    <small>{role.summary}</small>
+                  </span>
+                  <ArrowUpRight size={16} aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Reveal>
     </section>
   );
