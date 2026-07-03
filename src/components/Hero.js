@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowUpRight, Github, Stethoscope, Building2 } from 'lucide-react';
-import { availability, profile, rolePathways } from '../data/site';
+import { ArrowUpRight, Building2, ChevronDown, Github, Stethoscope } from 'lucide-react';
+import { availability, heroStats, profile, rolePathways } from '../data/site';
+import AnimatedCounter from './AnimatedCounter';
 import Reveal from './Reveal';
 
 function highlightHeadline(text, keywords) {
@@ -12,7 +13,7 @@ function highlightHeadline(text, keywords) {
 
   return parts.map((part, index) =>
     keywords.some((kw) => kw.toLowerCase() === part.toLowerCase()) ? (
-      <span key={`${part}-${index}`} className="text-accent">
+      <span key={`${part}-${index}`} className="text-gradient">
         {part}
       </span>
     ) : (
@@ -24,8 +25,17 @@ function highlightHeadline(text, keywords) {
 function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
+      <div className="hero__aurora" aria-hidden="true">
+        <span className="hero__orb hero__orb--teal" />
+        <span className="hero__orb hero__orb--blue" />
+        <span className="hero__orb hero__orb--green" />
+      </div>
+
       <Reveal className="hero__copy">
-        <span className="eyebrow">{profile.title}</span>
+        <span className="eyebrow">
+          <span className="pulse-dot pulse-dot--live" aria-hidden="true" />
+          {profile.title}
+        </span>
         <p className="hero__name">{profile.name}</p>
 
         <div className="availability-chip" aria-label="Availability">
@@ -62,11 +72,12 @@ function Hero() {
           </a>
         </div>
 
-        <div className="credibility-strip" role="list" aria-label="Portfolio credibility">
-          {profile.credibility.map((item) => (
-            <span key={item} className="credibility-strip__item" role="listitem">
-              {item}
-            </span>
+        <div className="hero__stats" role="list" aria-label="Portfolio metrics">
+          {heroStats.map((stat) => (
+            <div key={stat.label} className="hero__stat" role="listitem">
+              <AnimatedCounter value={stat.value} className="hero__stat-value" />
+              <span className="hero__stat-label">{stat.label}</span>
+            </div>
           ))}
         </div>
       </Reveal>
@@ -101,6 +112,11 @@ function Hero() {
           </ul>
         </div>
       </Reveal>
+
+      <a className="hero__scroll-cue" href="#roles" aria-label="Scroll to role pathways">
+        <span>Explore</span>
+        <ChevronDown size={18} aria-hidden="true" />
+      </a>
     </section>
   );
 }

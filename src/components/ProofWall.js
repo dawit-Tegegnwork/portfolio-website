@@ -1,5 +1,6 @@
 import React from 'react';
 import { proofItems } from '../data/site';
+import AnimatedCounter from './AnimatedCounter';
 import Reveal from './Reveal';
 
 function ProofWall() {
@@ -21,7 +22,9 @@ function ProofWall() {
           <Reveal key={item.label} delay={index * 50}>
             <article className="proof-card" style={{ '--proof-accent': item.accent }}>
               <span className="proof-card__badge">{item.badge}</span>
-              <strong>{item.value}</strong>
+              <strong>
+                <AnimatedCounter value={item.value} />
+              </strong>
               <span>{item.label}</span>
             </article>
           </Reveal>

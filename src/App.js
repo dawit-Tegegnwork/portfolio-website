@@ -4,6 +4,7 @@ import CaseStudyCards from './components/CaseStudyCards';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Marquee from './components/Marquee';
 import ModernizationLabs from './components/ModernizationLabs';
 import ProofWall from './components/ProofWall';
 import RolePathways from './components/RolePathways';
@@ -18,6 +19,7 @@ function App() {
 
       <main className="page-content" id="top">
         <Hero />
+        <Marquee />
         <RolePathways />
         <ModernizationLabs />
         <WhatIImprove />

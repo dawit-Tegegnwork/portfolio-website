@@ -28,6 +28,30 @@ export const availability = {
   languages: ['English — professional working', 'Amharic — native', 'Oromiffa — conversational'],
 };
 
+export const heroStats = [
+  { value: '100+', label: 'automated tests' },
+  { value: '8', label: 'modernization labs' },
+  { value: '6', label: 'core tech stacks' },
+  { value: '100%', label: 'synthetic data' },
+];
+
+export const marqueeItems = [
+  'FastAPI',
+  'React',
+  'Python',
+  'Go',
+  'PostgreSQL',
+  'Docker',
+  'Vector RAG',
+  'FHIR / HL7',
+  'DHIS2',
+  'OpenHIM',
+  'GitHub Actions',
+  'JWT / RBAC',
+  'AI Safety',
+  'Audit Logging',
+];
+
 export const navigation = [
   { href: '#roles', label: 'Roles' },
   { href: '#labs', label: 'Labs' },
