@@ -66,7 +66,7 @@ export const rolePathways = [
     id: 'healthcare-ai',
     title: 'Healthcare AI Engineer',
     summary: 'RAG pipelines, safety gates, human review, and evaluation harnesses for health-worker AI.',
-    accent: '#0E9E8E',
+    accent: '#0F9E6E',
     labIds: ['hep-assist', 'healthcare-ai'],
     skills: ['Vector RAG', 'Safety gates', 'Human-in-the-loop', 'Audit logging', 'Evaluation'],
   },
@@ -74,7 +74,7 @@ export const rolePathways = [
     id: 'interop',
     title: 'Digital Health / Interoperability Engineer',
     summary: 'FHIR-minded APIs, mediator patterns, lab integration, and data exchange validation.',
-    accent: '#1A6BB5',
+    accent: '#2E5BFF',
     labIds: ['interop-lab', 'eris'],
     skills: ['OpenHIM', 'DHIS2', 'HL7/FHIR concepts', 'Payload validation', 'LIS integration'],
   },
@@ -82,7 +82,7 @@ export const rolePathways = [
     id: 'backend',
     title: 'Backend / Full Stack Engineer',
     summary: 'REST APIs, RBAC, workflow engines, transaction safety, and mobile backends.',
-    accent: '#1FA85B',
+    accent: '#E8963A',
     labIds: ['enterprise-workflow', 'golang-api', 'firebase'],
     skills: ['FastAPI', 'Go', 'JWT/RBAC', 'PostgreSQL', 'Firebase'],
   },
@@ -90,7 +90,7 @@ export const rolePathways = [
     id: 'support',
     title: 'Application Support / Systems Modernization',
     summary: 'Legacy stabilization, runbooks, triage workflows, and repeatable health checks.',
-    accent: '#F2742C',
+    accent: '#FF5A36',
     labIds: ['eris', 'runbook'],
     skills: ['Runbooks', 'Incident triage', 'UAT planning', 'SQL checks', 'Migration docs'],
   },
@@ -101,7 +101,7 @@ export const modernizationLabs = [
     id: 'hep-assist',
     name: 'HEP Assist AI RAG Platform',
     tag: 'Healthcare AI',
-    accent: '#0E9E8E',
+    accent: '#0F9E6E',
     problem:
       'Community health workers need approved clinical guidance with citations — not unreviewed LLM answers.',
     modernization:
@@ -117,7 +117,7 @@ export const modernizationLabs = [
     id: 'eris',
     name: 'eRIS Modernization Demo',
     tag: 'Regulatory Systems',
-    accent: '#1A6BB5',
+    accent: '#2E5BFF',
     problem:
       'Regulatory information systems need role-based workflows, audit trails, and migration-ready architecture.',
     modernization:
@@ -133,7 +133,7 @@ export const modernizationLabs = [
     id: 'interop-lab',
     name: 'Healthcare Interoperability Lab',
     tag: 'Integration',
-    accent: '#1FA85B',
+    accent: '#E8963A',
     problem:
       'Health programs need validated data exchange between community systems, labs, and national aggregates.',
     modernization:
@@ -153,42 +153,42 @@ export const whatIImprove = [
     title: 'Legacy workflows',
     description: 'Replace manual, paper-heavy processes with state machines, dashboards, and clear status transitions.',
     icon: 'workflow',
-    accent: '#F2742C',
+    accent: '#FF5A36',
   },
   {
     id: 'audit',
     title: 'Auditability',
     description: 'Append-only audit logs, actor attribution, and review trails that survive compliance questions.',
     icon: 'audit',
-    accent: '#0E9E8E',
+    accent: '#0F9E6E',
   },
   {
     id: 'validation',
     title: 'Data validation',
     description: 'Input checks, completeness scoring, duplicate detection, and smoke scripts before go-live.',
     icon: 'validation',
-    accent: '#1A6BB5',
+    accent: '#2E5BFF',
   },
   {
     id: 'apis',
     title: 'APIs',
     description: 'OpenAPI-documented REST services with auth, pagination, health endpoints, and predictable errors.',
     icon: 'api',
-    accent: '#1FA85B',
+    accent: '#E8963A',
   },
   {
     id: 'deploy',
     title: 'Deployment readiness',
     description: 'Docker Compose stacks, env templates, health/ready probes, and CI pipelines on every repo.',
     icon: 'deploy',
-    accent: '#0B2540',
+    accent: '#14150F',
   },
   {
     id: 'ai-safety',
     title: 'AI safety',
     description: 'Refusal gates, human review loops, citation requirements, and evaluation harnesses — not black-box AI.',
     icon: 'safety',
-    accent: '#0E9E8E',
+    accent: '#0F9E6E',
   },
 ];
 
@@ -199,7 +199,7 @@ export const caseStudies = [
     id: 'hep-assist',
     title: 'HEP Assist AI RAG Platform',
     roleFit: 'Healthcare AI Engineer',
-    accent: '#0E9E8E',
+    accent: '#0F9E6E',
     problem:
       'Health programs need AI-assisted Q&A over approved content, with safety controls and human review before any answer is trusted.',
     modernization:
@@ -214,7 +214,7 @@ export const caseStudies = [
     id: 'eris',
     title: 'eRIS Modernization Demo',
     roleFit: 'Systems Modernization / Digital Health',
-    accent: '#1A6BB5',
+    accent: '#2E5BFF',
     problem:
       'Regulatory application systems need multi-role review workflows, document checklists, and migration stabilization plans.',
     modernization:
@@ -229,7 +229,7 @@ export const caseStudies = [
     id: 'healthcare-ai',
     title: 'Healthcare AI Workflow Assistant',
     roleFit: 'Healthcare AI / Backend',
-    accent: '#0E9E8E',
+    accent: '#0F9E6E',
     problem:
       'Clinical teams need structured extraction from notes with mandatory human review — not autonomous AI decisions.',
     modernization:
@@ -244,7 +244,7 @@ export const caseStudies = [
     id: 'enterprise-workflow',
     title: 'Enterprise Workflow Management',
     roleFit: 'Backend / Full Stack',
-    accent: '#1FA85B',
+    accent: '#E8963A',
     problem: 'Organizations need approval workflows with roles, audit trails, and exportable reporting.',
     modernization:
       'JWT + RBAC approval engine with state machine, CSV export, seeded demo requests, and full request history.',
@@ -258,7 +258,7 @@ export const caseStudies = [
     id: 'golang-api',
     title: 'Golang Transaction API',
     roleFit: 'Backend Engineer',
-    accent: '#0B2540',
+    accent: '#14150F',
     problem: 'Wallet-style transfers must be idempotent, auditable, and safe under network retries.',
     modernization:
       'Go REST API with idempotency keys, transaction-safe transfers, append-only audit log, and auto-seeded demo accounts.',
@@ -272,7 +272,7 @@ export const caseStudies = [
     id: 'runbook',
     title: 'Application Support Runbook Lab',
     roleFit: 'Application Support',
-    accent: '#F2742C',
+    accent: '#FF5A36',
     problem: 'Support teams need triage workflows, documentation, and repeatable data health checks.',
     modernization:
       'Incident triage board, UAT/release runbooks, ticket tracker API, and SQL health-check scripts with Docker packaging.',
@@ -285,10 +285,10 @@ export const caseStudies = [
 ];
 
 export const proofItems = [
-  { value: '100+', label: 'automated tests passing across labs', badge: 'tests', accent: '#0E9E8E' },
-  { value: 'Docker', label: 'Compose stacks on every API lab', badge: 'docker', accent: '#1A6BB5' },
-  { value: 'CI', label: 'GitHub Actions on every repo', badge: 'ci', accent: '#1FA85B' },
-  { value: '100%', label: 'synthetic data — safe to evaluate', badge: 'safe', accent: '#F2742C' },
-  { value: 'Docs', label: 'architecture notes & runbooks', badge: 'docs', accent: '#0B2540' },
-  { value: '8', label: 'modernization labs on GitHub', badge: 'repos', accent: '#0E9E8E' },
+  { value: '100+', label: 'automated tests passing across labs', badge: 'tests', accent: '#0F9E6E' },
+  { value: 'Docker', label: 'Compose stacks on every API lab', badge: 'docker', accent: '#2E5BFF' },
+  { value: 'CI', label: 'GitHub Actions on every repo', badge: 'ci', accent: '#E8963A' },
+  { value: '100%', label: 'synthetic data — safe to evaluate', badge: 'safe', accent: '#FF5A36' },
+  { value: 'Docs', label: 'architecture notes & runbooks', badge: 'docs', accent: '#14150F' },
+  { value: '8', label: 'modernization labs on GitHub', badge: 'repos', accent: '#0F9E6E' },
 ];
