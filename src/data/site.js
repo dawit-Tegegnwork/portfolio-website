@@ -101,7 +101,7 @@ export const modernizationLabs = [
     id: 'bidlens',
     name: 'BidLens AI Proposal Intelligence',
     tag: 'Full Stack AI',
-    accent: '#EF5B2A',
+    accent: '#155EEF',
     problem:
       'Operations teams compare inconsistent vendor proposals manually and discover costly scope gaps too late.',
     modernization:
@@ -215,7 +215,7 @@ export const caseStudies = [
     id: 'bidlens',
     title: 'BidLens AI Proposal Intelligence',
     roleFit: 'Senior Full Stack / AI Engineer',
-    accent: '#EF5B2A',
+    accent: '#155EEF',
     problem:
       'Proposal reviewers need a fast, auditable way to compare vendor scope, prices, and exclusions without delegating decisions to AI.',
     modernization:
