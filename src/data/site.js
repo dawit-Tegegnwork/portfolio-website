@@ -8,7 +8,7 @@ export const profile = {
     'Software engineer in Ethiopia building production-style modernization labs for health programs, regulatory systems, and clinical operations — with synthetic data, tests, and runbooks recruiters can verify.',
   credibility: [
     '100+ automated tests',
-    '8 modernization labs',
+    '9 modernization labs',
     'Docker + CI on every repo',
     'Synthetic data only',
     'Docs & runbooks included',
@@ -30,7 +30,7 @@ export const availability = {
 
 export const heroStats = [
   { value: '100+', label: 'automated tests' },
-  { value: '8', label: 'modernization labs' },
+  { value: '9', label: 'modernization labs' },
   { value: '6', label: 'core tech stacks' },
   { value: '100%', label: 'synthetic data' },
 ];
@@ -83,8 +83,8 @@ export const rolePathways = [
     title: 'Backend / Full Stack Engineer',
     summary: 'REST APIs, RBAC, workflow engines, transaction safety, and mobile backends.',
     accent: '#E8963A',
-    labIds: ['enterprise-workflow', 'golang-api', 'firebase'],
-    skills: ['FastAPI', 'Go', 'JWT/RBAC', 'PostgreSQL', 'Firebase'],
+    labIds: ['bidlens', 'enterprise-workflow', 'golang-api', 'firebase'],
+    skills: ['Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Firebase'],
   },
   {
     id: 'support',
@@ -97,6 +97,22 @@ export const rolePathways = [
 ];
 
 export const modernizationLabs = [
+  {
+    id: 'bidlens',
+    name: 'BidLens AI Proposal Intelligence',
+    tag: 'Full Stack AI',
+    accent: '#EF5B2A',
+    problem:
+      'Operations teams compare inconsistent vendor proposals manually and discover costly scope gaps too late.',
+    modernization:
+      'Next.js review workspace that normalizes proposal scope, detects omissions and pricing anomalies, supports configurable LLM extraction, and keeps final decisions human-controlled with an audit trail.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Node.js', 'Firestore', 'LLM integration'],
+    github: 'https://github.com/dawit-Tegegnwork/bidlens-ai',
+    localTest: 'npm install && npm run dev',
+    docsUrl: 'https://github.com/dawit-Tegegnwork/bidlens-ai#run-locally',
+    tests: 7,
+    screenshot: `${process.env.PUBLIC_URL || ''}/screenshots/bidlens-ai.png`,
+  },
   {
     id: 'hep-assist',
     name: 'HEP Assist AI RAG Platform',
@@ -196,6 +212,21 @@ const screenshotBase = `${process.env.PUBLIC_URL || ''}/screenshots`;
 
 export const caseStudies = [
   {
+    id: 'bidlens',
+    title: 'BidLens AI Proposal Intelligence',
+    roleFit: 'Senior Full Stack / AI Engineer',
+    accent: '#EF5B2A',
+    problem:
+      'Proposal reviewers need a fast, auditable way to compare vendor scope, prices, and exclusions without delegating decisions to AI.',
+    modernization:
+      'Responsive Next.js product with TypeScript domain logic, Node.js APIs, Zod validation, configurable LLM extraction, Firestore security rules, reviewer approvals, request IDs, Docker, and CI.',
+    stack: ['Next.js', 'TypeScript', 'Node.js', 'Firestore', 'LLM structured output', 'Docker'],
+    howToTest: 'npm install && npm run dev',
+    github: 'https://github.com/dawit-Tegegnwork/bidlens-ai',
+    tests: 7,
+    screenshot: `${screenshotBase}/bidlens-ai.png`,
+  },
+  {
     id: 'hep-assist',
     title: 'HEP Assist AI RAG Platform',
     roleFit: 'Healthcare AI Engineer',
@@ -290,5 +321,5 @@ export const proofItems = [
   { value: 'CI', label: 'GitHub Actions on every repo', badge: 'ci', accent: '#E8963A' },
   { value: '100%', label: 'synthetic data — safe to evaluate', badge: 'safe', accent: '#FF5A36' },
   { value: 'Docs', label: 'architecture notes & runbooks', badge: 'docs', accent: '#14150F' },
-  { value: '8', label: 'modernization labs on GitHub', badge: 'repos', accent: '#0F9E6E' },
+  { value: '9', label: 'modernization labs on GitHub', badge: 'repos', accent: '#0F9E6E' },
 ];
