@@ -127,7 +127,7 @@ export const modernizationLabs = [
     localTest: 'docker compose up --build',
     docsUrl: 'https://github.com/dawit-Tegegnwork/hep-assist-ai-rag-platform#quick-start-3-minutes',
     tests: 65,
-    screenshot: `${process.env.PUBLIC_URL || ''}/screenshots/hep-assist.svg`,
+    screenshot: `${process.env.PUBLIC_URL || ''}/screenshots/hep-assist.png`,
   },
   {
     id: 'eris',
@@ -143,7 +143,7 @@ export const modernizationLabs = [
     localTest: 'docker compose up --build',
     docsUrl: 'https://github.com/dawit-Tegegnwork/eris-modernization-demo#demo-in-3-minutes',
     tests: 18,
-    screenshot: `${process.env.PUBLIC_URL || ''}/screenshots/eris.svg`,
+    screenshot: `${process.env.PUBLIC_URL || ''}/screenshots/eris.png`,
   },
   {
     id: 'interop-lab',
@@ -239,7 +239,7 @@ export const caseStudies = [
     howToTest: 'docker compose up --build && ./scripts/demo_workflow.sh http://127.0.0.1:8000',
     github: 'https://github.com/dawit-Tegegnwork/hep-assist-ai-rag-platform',
     tests: 65,
-    screenshot: `${screenshotBase}/hep-assist.svg`,
+    screenshot: `${screenshotBase}/hep-assist.png`,
   },
   {
     id: 'eris',
@@ -254,7 +254,7 @@ export const caseStudies = [
     howToTest: 'docker compose up --build && open http://localhost:5180 (reviewer@demo.local / Demo123!)',
     github: 'https://github.com/dawit-Tegegnwork/eris-modernization-demo',
     tests: 18,
-    screenshot: `${screenshotBase}/eris.svg`,
+    screenshot: `${screenshotBase}/eris.png`,
   },
   {
     id: 'healthcare-ai',
@@ -269,7 +269,7 @@ export const caseStudies = [
     howToTest: 'docker compose up --build && curl http://localhost:8000/health',
     github: 'https://github.com/dawit-Tegegnwork/healthcare-ai-workflow-assistant',
     tests: 12,
-    screenshot: `${screenshotBase}/healthcare-ai.svg`,
+    screenshot: `${screenshotBase}/hep-assist.png`,
   },
   {
     id: 'enterprise-workflow',
@@ -283,7 +283,7 @@ export const caseStudies = [
     howToTest: 'docker compose up --build && curl http://localhost:8001/health',
     github: 'https://github.com/dawit-Tegegnwork/enterprise-workflow-management-system',
     tests: 9,
-    screenshot: `${screenshotBase}/enterprise-workflow.svg`,
+    screenshot: `${screenshotBase}/enterprise-workflow.png`,
   },
   {
     id: 'golang-api',
@@ -297,7 +297,7 @@ export const caseStudies = [
     howToTest: 'docker compose up --build && curl http://localhost:8082/health',
     github: 'https://github.com/dawit-Tegegnwork/golang-transaction-api',
     tests: 10,
-    screenshot: `${screenshotBase}/golang-api.svg`,
+    screenshot: `${screenshotBase}/golang-api.png`,
   },
   {
     id: 'runbook',
@@ -311,7 +311,7 @@ export const caseStudies = [
     howToTest: 'docker compose up --build && curl http://localhost:8010/health',
     github: 'https://github.com/dawit-Tegegnwork/application-support-runbook-lab',
     tests: 7,
-    screenshot: `${screenshotBase}/runbook.svg`,
+    screenshot: `${screenshotBase}/runbook.png`,
   },
 ];
 
