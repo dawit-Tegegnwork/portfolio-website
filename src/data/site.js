@@ -52,6 +52,25 @@ export const marqueeItems = [
   'Audit Logging',
 ];
 
+export const systemsMap = {
+  nodes: [
+    { id: 'health-worker', label: 'HEP Assist', x: 22, y: 22, tech: ['RAG', 'Safety'], missionId: 'hep-assist' },
+    { id: 'regulatory', label: 'eRIS', x: 73, y: 20, tech: ['RBAC', 'Audit'], missionId: 'eris' },
+    { id: 'proposal', label: 'BidLens', x: 50, y: 43, tech: ['Next.js', 'LLM'], missionId: 'bidlens' },
+    { id: 'interop', label: 'OpenHIM', x: 20, y: 69, tech: ['DHIS2', 'FHIR'], missionId: 'interop-lab' },
+    { id: 'workflow', label: 'Workflow', x: 78, y: 68, tech: ['FastAPI', 'RBAC'], missionId: 'enterprise-workflow' },
+    { id: 'operations', label: 'Support Ops', x: 50, y: 87, tech: ['Runbooks', 'Triage'], missionId: 'runbook' },
+  ],
+  edges: [
+    ['health-worker', 'proposal'],
+    ['regulatory', 'proposal'],
+    ['proposal', 'interop'],
+    ['proposal', 'workflow'],
+    ['interop', 'operations'],
+    ['workflow', 'operations'],
+  ],
+};
+
 export const navigation = [
   { href: '#roles', label: 'Roles' },
   { href: '#labs', label: 'Labs' },

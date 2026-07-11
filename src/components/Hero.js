@@ -4,6 +4,7 @@ import { availability, heroStats, profile, rolePathways } from '../data/site';
 import AnimatedCounter from './AnimatedCounter';
 import PulseLine from './PulseLine';
 import Reveal from './Reveal';
+import SystemsMap from './SystemsMap';
 
 function highlightHeadline(text, keywords) {
   const pattern = new RegExp(
@@ -106,6 +107,8 @@ function Hero() {
             ))}
           </ul>
         </div>
+
+        <SystemsMap />
       </Reveal>
     </section>
   );

@@ -96,7 +96,7 @@ function SystemsMap() {
             <a
               key={node.id}
               className="systems-map__link"
-              href={`#mission-${node.missionId}`}
+              href={`#lab-${node.missionId}`}
               style={{ left: `${node.x}%`, top: `${node.y}%` }}
             >
               <span className="sr-only">{node.label} project</span>
