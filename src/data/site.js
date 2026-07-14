@@ -2,10 +2,10 @@ export const profile = {
   name: 'Dawit Tegegnwork Wubale',
   title: 'Senior Full-Stack Developer',
   tagline: 'React/Next.js · Laravel/Node.js · ERP/LIMS',
-  headline: 'Building useful software for health systems and the people who run them.',
-  headlineEmphasis: 'health systems',
+  headline: 'Building secure enterprise software for complex operations.',
+  headlineEmphasis: 'secure enterprise software',
   subheadline:
-    'Senior-level full-stack engineer with 5 years building, customizing, integrating, and supporting production enterprise systems across healthcare, research laboratories, ERP, and learning platforms.',
+    'I work across frontend, backend, databases, integrations, deployment, and production support. My experience includes Laravel, React/Next.js, Node.js, ERP platforms, OpenELIS Global 2, multi-user dashboards, secure workflows, and REST APIs.',
   about:
     'Based in Addis Ababa, I serve as a hands-on full-stack engineer for healthcare and enterprise platforms — OpenELIS Global 2, Frappe/ERPNext, Odoo, Laravel APIs, React/Next.js interfaces, SQL-backed workflows, role-based access, reporting, and production troubleshooting. I translate complex operational requirements into secure, maintainable software.',
   github: 'https://github.com/dawit-Tegegnwork',
@@ -13,7 +13,7 @@ export const profile = {
   email: 'dawittegegnwork@gmail.com',
   phone: '+251 939 378 664',
   liveSite: 'https://dawit-tegegnwork.github.io/portfolio-website/',
-  cvFilename: 'Dawit-Tegegnwork-CV.pdf',
+  cvFilename: 'Dawit_Tegegnwork_Wubale_CV.pdf',
   credibility: [
     '5 years production experience',
     'OpenELIS Global 2 primary developer',
@@ -26,7 +26,8 @@ export const profile = {
 export const availability = {
   location: 'Addis Ababa, Ethiopia',
   timezone: 'UTC+3',
-  remote: 'Open to remote',
+  remote: 'Available for on-site and remote roles',
+  line: 'Addis Ababa, Ethiopia · Available for on-site and remote roles.',
   languages: ['English — professional working', 'Amharic — native'],
 };
 
@@ -179,16 +180,35 @@ export const enterpriseDelivery = [
 
 export const expertise = [
   {
+    id: 'backend',
+    title: 'PHP / Laravel & Backend',
+    accent: '#2E5BFF',
+    items: [
+      'PHP',
+      'Laravel',
+      'Eloquent ORM',
+      'Node.js',
+      'REST APIs',
+      'Java/Spring Boot',
+      'Python/FastAPI',
+      'Queues/jobs',
+      'RBAC and workflow automation',
+    ],
+  },
+  {
     id: 'frontend',
     title: 'Frontend',
     accent: '#FF5A36',
-    items: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'HTML5/CSS3', 'Responsive dashboards', 'Complex data-entry UIs'],
-  },
-  {
-    id: 'backend',
-    title: 'Backend & APIs',
-    accent: '#2E5BFF',
-    items: ['PHP/Laravel', 'Eloquent ORM', 'Node.js', 'Java/Spring Boot', 'Python/FastAPI', 'REST APIs', 'Queues/jobs'],
+    items: [
+      'React',
+      'Next.js',
+      'JavaScript',
+      'TypeScript',
+      'HTML5',
+      'CSS3',
+      'Tailwind CSS',
+      'Responsive dashboards',
+    ],
   },
   {
     id: 'platforms',
@@ -200,32 +220,34 @@ export const expertise = [
     id: 'data',
     title: 'Data & Reporting',
     accent: '#E8963A',
-    items: ['PostgreSQL', 'MySQL/MariaDB', 'MongoDB', 'SQL modelling', 'Migrations', 'Validation', 'Operational reports'],
+    items: ['PostgreSQL', 'MySQL', 'MariaDB', 'MongoDB', 'SQL modelling', 'Migrations', 'Operational reports'],
   },
   {
     id: 'security',
     title: 'Security & Delivery',
     accent: '#14150F',
-    items: ['RBAC', 'Auditability', 'Docker', 'Linux/Ubuntu', 'Nginx', 'Git/GitHub', 'CI/CD', 'UAT', 'Production support'],
+    items: ['RBAC', 'Docker', 'Linux', 'Nginx', 'Git/GitHub', 'CI/CD', 'UAT', 'Production support'],
   },
 ];
 
 export const marqueeItems = [
+  'PHP',
+  'Laravel',
   'React',
   'Next.js',
-  'Laravel',
+  'TypeScript',
+  'Tailwind CSS',
   'Node.js',
-  'OpenELIS Global 2',
-  'ERPNext',
-  'Odoo',
+  'REST APIs',
   'PostgreSQL',
   'MySQL',
+  'Frappe/ERPNext',
+  'Odoo',
+  'OpenELIS Global 2',
   'Docker',
-  'FastAPI',
-  'Spring Boot',
-  'OpenMRS/Bahmni',
+  'Linux',
+  'Git/GitHub',
   'RBAC',
-  'LIS workflows',
 ];
 
 const screenshotBase = `${process.env.PUBLIC_URL || ''}/screenshots`;

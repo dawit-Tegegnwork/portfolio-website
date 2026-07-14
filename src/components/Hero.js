@@ -4,7 +4,7 @@ import { availability, profile } from '../data/site';
 import Reveal from './Reveal';
 
 function Hero() {
-  const cvHref = `${process.env.PUBLIC_URL || ''}/${profile.cvFilename}`;
+  const cvHref = `${process.env.PUBLIC_URL || ''}/Dawit_Tegegnwork_Wubale_CV.pdf`;
 
   return (
     <section className="hero" aria-labelledby="hero-heading">
@@ -14,8 +14,7 @@ function Hero() {
         </p>
         <p className="hero__tagline">{profile.tagline}</p>
         <h1 id="hero-heading" className="hero__title">
-          Building useful software for <em>{profile.headlineEmphasis}</em> and the people who run
-          them.
+          Building <em>secure enterprise software</em> for complex operations.
         </h1>
       </Reveal>
 
@@ -31,9 +30,7 @@ function Hero() {
           </figcaption>
         </figure>
         <p>{profile.subheadline}</p>
-        <p className="hero__location">
-          {availability.location} / {availability.timezone} / {availability.remote}
-        </p>
+        <p className="hero__location">{availability.line}</p>
         <div className="hero__actions">
           <a className="text-link" href="#experience">
             Experience <ArrowDownRight size={18} aria-hidden="true" />
@@ -45,10 +42,22 @@ function Hero() {
             <FileDown size={18} aria-hidden="true" />
             Download CV
           </a>
-          <a className="icon-link" href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+          <a
+            className="icon-link"
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
             <Github size={19} />
           </a>
-          <a className="icon-link" href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a
+            className="icon-link"
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <Linkedin size={19} />
           </a>
           <a className="icon-link" href={`mailto:${profile.email}`} aria-label="Email">

@@ -10,8 +10,8 @@ function Expertise() {
           <span className="section-heading__kicker">Technical expertise</span>
           <h2>The stack I use in production</h2>
           <p>
-            Aligned with my CV — frontend, backend APIs, enterprise platforms, data/reporting, and
-            security & delivery.
+            PHP/Laravel-first full stack — React, Next.js, Tailwind CSS, Node.js, REST APIs,
+            PostgreSQL/MySQL, Frappe/ERPNext, Odoo, Docker, Linux, and RBAC workflows.
           </p>
         </div>
       </Reveal>

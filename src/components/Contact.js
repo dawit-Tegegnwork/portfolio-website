@@ -4,7 +4,7 @@ import { profile } from '../data/site';
 import Reveal from './Reveal';
 
 function Contact() {
-  const cvHref = `${process.env.PUBLIC_URL || ''}/${profile.cvFilename}`;
+  const cvHref = `${process.env.PUBLIC_URL || ''}/Dawit_Tegegnwork_Wubale_CV.pdf`;
 
   return (
     <footer className="site-footer" id="contact">
@@ -12,10 +12,10 @@ function Contact() {
         <div className="site-footer__content">
           <div>
             <span className="section-heading__kicker">Contact</span>
-            <h2>Hiring for full-stack, LIMS, or ERP delivery?</h2>
+            <h2>Let&apos;s build the next enterprise system together</h2>
             <p>
-              Open to international roles as a Senior Full-Stack Developer across React/Next.js,
-              Laravel/Node.js, digital health / LIMS, and enterprise ERP platforms.
+              Available for senior full-stack, enterprise software, ERP, integration, healthcare,
+              and laboratory systems roles in Addis Ababa or remotely.
             </p>
           </div>
 

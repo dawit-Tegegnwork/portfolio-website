@@ -4,7 +4,7 @@ import { availability, profile } from '../data/site';
 import Reveal from './Reveal';
 
 function About() {
-  const cvHref = `${process.env.PUBLIC_URL || ''}/${profile.cvFilename}`;
+  const cvHref = `${process.env.PUBLIC_URL || ''}/Dawit_Tegegnwork_Wubale_CV.pdf`;
 
   return (
     <section className="section section--about" id="about">

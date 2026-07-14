@@ -18,10 +18,10 @@ function WhatIImprove() {
       <Reveal>
         <div className="section-heading">
           <span className="section-heading__kicker">What I improve</span>
-          <h2>Outcomes health programs actually need</h2>
+          <h2>Outcomes enterprise operations actually need</h2>
           <p>
-            Not feature lists — the operational gaps I close when modernizing legacy health and
-            regulatory systems.
+            The operational gaps I close when building or modernizing multi-user business,
+            laboratory, and service platforms.
           </p>
         </div>
       </Reveal>
