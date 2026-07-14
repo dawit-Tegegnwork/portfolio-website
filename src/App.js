@@ -2,6 +2,9 @@ import React from 'react';
 import About from './components/About';
 import CaseStudyCards from './components/CaseStudyCards';
 import Contact from './components/Contact';
+import EnterpriseDelivery from './components/EnterpriseDelivery';
+import ExperienceTimeline from './components/ExperienceTimeline';
+import Expertise from './components/Expertise';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ModernizationLabs from './components/ModernizationLabs';
@@ -18,11 +21,14 @@ function App() {
 
       <main className="page-content" id="top">
         <Hero />
+        <ExperienceTimeline />
         <RolePathways />
-        <ModernizationLabs />
+        <EnterpriseDelivery />
         <WhatIImprove />
         <ProofWall />
+        <ModernizationLabs />
         <CaseStudyCards />
+        <Expertise />
         <About />
       </main>
 

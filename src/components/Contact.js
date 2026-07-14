@@ -1,19 +1,21 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { FileDown, Github, Linkedin, Mail } from 'lucide-react';
 import { profile } from '../data/site';
 import Reveal from './Reveal';
 
 function Contact() {
+  const cvHref = `${process.env.PUBLIC_URL || ''}/${profile.cvFilename}`;
+
   return (
     <footer className="site-footer" id="contact">
       <Reveal>
         <div className="site-footer__content">
           <div>
             <span className="section-heading__kicker">Contact</span>
-            <h2>Let&apos;s talk about your next modernization challenge</h2>
+            <h2>Hiring for full-stack, LIMS, or ERP delivery?</h2>
             <p>
-              Open to international roles in healthcare AI, digital health interoperability,
-              backend engineering, and application support.
+              Open to international roles as a Senior Full-Stack Developer across React/Next.js,
+              Laravel/Node.js, digital health / LIMS, and enterprise ERP platforms.
             </p>
           </div>
 
@@ -40,13 +42,17 @@ function Contact() {
               <Github size={18} aria-hidden="true" />
               GitHub
             </a>
+            <a className="button button--ghost" href={cvHref} download>
+              <FileDown size={18} aria-hidden="true" />
+              Download CV
+            </a>
           </div>
         </div>
       </Reveal>
 
       <p className="site-footer__fineprint">
-        © {new Date().getFullYear()} {profile.name}. Modernization labs use synthetic data only —
-        not deployed production systems.
+        © {new Date().getFullYear()} {profile.name}. Production experience from my CV; public labs
+        use synthetic data only.
       </p>
     </footer>
   );

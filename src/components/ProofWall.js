@@ -9,10 +9,10 @@ function ProofWall() {
       <Reveal>
         <div className="section-heading">
           <span className="section-heading__kicker">Proof</span>
-          <h2>Evidence you can verify before the interview</h2>
+          <h2>CV credibility + public lab evidence</h2>
           <p>
-            Tests passing, Docker stacks, CI pipelines, synthetic-data safety, and docs/runbooks —
-            built so recruiters can evaluate engineering quality on their own schedule.
+            Years of production delivery (OpenELIS, ERP, hospital systems) plus open labs with tests,
+            Docker, and CI that you can verify before the interview.
           </p>
         </div>
       </Reveal>

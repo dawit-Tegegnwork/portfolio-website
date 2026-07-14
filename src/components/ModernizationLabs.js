@@ -9,11 +9,11 @@ function ModernizationLabs() {
     <section className="section section--sand" id="labs">
       <Reveal>
         <div className="section-heading">
-          <span className="section-heading__kicker">Modernization Labs</span>
-          <h2>Flagship systems you can run and inspect</h2>
+          <span className="section-heading__kicker">Public proof labs</span>
+          <h2>Clone, run, and verify the engineering patterns</h2>
           <p>
-            Production-style reference implementations with synthetic data — modernization labs, not
-            deployed clinical or government systems.
+            Complementary open-source labs with synthetic data — so recruiters can inspect stack,
+            tests, and Docker without accessing confidential OpenELIS/ERP production code.
           </p>
         </div>
       </Reveal>
